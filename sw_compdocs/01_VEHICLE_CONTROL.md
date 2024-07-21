@@ -1233,7 +1233,7 @@ It provides 4 number outputs that produce a standard value ranging from -1 to 1,
 
 ## Tank Drive Wheel (Huge)
 
-Large drive wheel for tracked vehicles.
+Huge drive wheel for tracked vehicles.
 
 The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.
 
@@ -1259,7 +1259,7 @@ The wheel will form a track with other wheels of the same size and orientation t
 
 ## Tank Drive Wheel (Large)
 
-Medium drive wheel for tracked vehicles.
+Large drive wheel for tracked vehicles.
 
 The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.
 
@@ -1337,7 +1337,7 @@ The wheel will form a track with other wheels of the same size and orientation t
 
 ## Tank Wheel (Huge)
 
-Large wheel for tracked vehicles.
+Huge wheel for tracked vehicles.
 
 A drive wheel is required to rotate the connected track. The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.
 
@@ -1357,7 +1357,7 @@ A drive wheel is required to rotate the connected track. The wheel will form a t
 
 ## Tank Wheel (Large)
 
-Medium wheel for tracked vehicles.
+Large wheel for tracked vehicles.
 
 A drive wheel is required to rotate the connected track. The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.
 
