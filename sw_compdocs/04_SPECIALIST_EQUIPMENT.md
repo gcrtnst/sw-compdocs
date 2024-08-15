@@ -405,7 +405,7 @@ Press [lmb] to heal yourself, or heal a survivor highlighted by your crosshair.
 
 A large equipment storage unit containing a fishing rod.
 
-Hold and release [lmb] to load and cast the fishing line. Hold [r] to reel in the fishing line.
+Hold and release [lmb] to load and cast the fishing line. Hold [lmb] to reel in the fishing line. Press [r] before casting to cycle the sink depth of the hook.
 
 ### PROPERTIES
 
@@ -1683,34 +1683,6 @@ The welding torch can repair components. This welder is electrically powered and
 | Type | Label | Description |
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
-
-## Net Anchor
-
-An anchor point for a fishing net.
-
-Draw a rope logic link between four Net Anchors in a loop to form a net.
-
-### PROPERTIES
-
-- Mass: 3
-- Dimensions (WxDxH): 1x1x3
-- Cost: $15
-- Tags: basic,fishing
-- File: rope_hook_net.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| on/off | Release Catch |  |
-| on/off | Extend |  |
-| on/off | Retract |  |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| rope | Net Node |  |
 
 ## Outfit Inventory (Arctic)
 

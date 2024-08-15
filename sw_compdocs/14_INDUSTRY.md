@@ -283,6 +283,32 @@ Produces large amounts of heat by burning supplied diesel. Consumes a portion of
 | fluid | Exhaust Out | Port for removing exhaust from the furnace. |
 | fluid | Diesel In | Port for supplying diesel fuel. |
 
+## Lobster Pot
+
+A trap for lobsters and crabs.
+
+A portable trap for catching lobsters and crabs on the sea floor.
+
+### PROPERTIES
+
+- Mass: 45
+- Dimensions (WxDxH): 5x5x3
+- Cost: $150
+- Tags: crab,fishing
+- File: lobster_pot.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Release | When on, releases captured crabs and lobsters. When off, keeps them contained. |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Fill Level |  |
+
 ## Mineral Converter
 
 > [!WARNING]
@@ -311,6 +337,40 @@ Transports minerals through the connected system.
 | Type | Label | Description |
 | --- | --- | --- |
 | fluid | water |  |
+
+## Net Anchor
+
+An anchor point for a fishing net.
+
+Draw a rope logic link between four Net Anchors in a loop to form a net.
+
+### PROPERTIES
+
+- Mass: 3
+- Dimensions (WxDxH): 1x1x3
+- Cost: $15
+- Tags: basic,fishing
+- File: rope_hook_net.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Release Catch |  |
+| on/off | Extend |  |
+| on/off | Retract |  |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| composite | Net Data | Outputs attached net data. Value 1: net fill level, Value 2: net extend factor. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Net Node |  |
 
 ## Nuclear Control Rod
 
