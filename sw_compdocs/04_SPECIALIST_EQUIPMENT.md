@@ -1788,7 +1788,7 @@ When equipped, damage from projectiles to the body is reduced slightly and damag
 
 An outfit inventory unit containing specialist diving equipment.
 
-When equipped, it will allow deep sea diving to a depth of 230m, and provides air for 10 minutes. The air tank can be refilled by storing the equipment in an outfit inventory unit.
+When equipped, it will allow deep sea diving to a depth of 230m, and provides air for 10 minutes. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.
 
 ### PROPERTIES
 
@@ -1909,7 +1909,7 @@ When equipped, damage from projectiles to the body is reduced significantly and 
 
 An outfit inventory unit containing specialist scuba gear.
 
-When equipped, it will allow diving to a depth of 40m, and provides air for 2 minutes. The air tank can be refilled by storing the gear in an outfit inventory unit.
+When equipped, it will allow diving to a depth of 40m, and provides air for 2 minutes. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.
 
 ### PROPERTIES
 
@@ -1928,7 +1928,7 @@ When equipped, it will allow diving to a depth of 40m, and provides air for 2 mi
 
 ## Outfit Inventory (Space Exploration)
 
-An outfit inventory unit containing specialist Space Exploration gear required for surviving in space.
+An outfit inventory unit containing specialist Space Exploration gear required for surviving in space. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.
 
 When equipped, it will protect against low temperatures, low pressures and provide oxygen.
 
@@ -1949,7 +1949,7 @@ When equipped, it will protect against low temperatures, low pressures and provi
 
 ## Outfit Inventory (Space)
 
-An outfit inventory unit containing specialist Space Exploration gear required for surviving in space.
+An outfit inventory unit containing specialist Space Exploration gear required for surviving in space. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.
 
 When equipped, it will protect against low temperatures, low pressures and provide oxygen.
 
