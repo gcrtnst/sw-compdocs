@@ -422,6 +422,12 @@ The valve can be configured to select which fluids may pass across the two direc
 - Tags: basic
 - File: fluid_filter.xml
 
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
+
 ### connections
 
 | Type | Label | Description |
@@ -442,6 +448,12 @@ Allows fluid to move from the input side of the valve to the output but resists 
 - Cost: $100
 - Tags: basic
 - File: fluid_valve_flow.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
 
 ### connections
 
@@ -630,6 +642,12 @@ Controls flow from one side of the valve to the other. Fluid can flow in both di
 | --- | --- | --- |
 | on/off | Valve Control | Valve gate control for opening and closing the valve. |
 
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
+
 ### connections
 
 | Type | Label | Description |
@@ -651,6 +669,12 @@ Interacting with [q]/[e] will open / close the valve. Controls flow from one sid
 - Cost: $100
 - Tags: basic
 - File: fluid_valve_on_off_manual.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
 
 ### connections
 
@@ -768,6 +792,12 @@ Connect to an inlet and outlet to create a pumping system to move fluid around a
 | --- | --- | --- |
 | on/off | On/Off | Controls whether or not the fluid is being pumped through. |
 
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
+
 ### connections
 
 | Type | Label | Description |
@@ -789,6 +819,12 @@ Hold [q]/[e] to create pressure in the pump. Connect to an inlet and outlet to c
 - Cost: $100
 - Tags: basic
 - File: water_pump_manual.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
 
 ### connections
 
@@ -935,6 +971,12 @@ Controls flow from one side of the valve to the other. Fluid can flow in both di
 | --- | --- | --- |
 | number | Valve Control | Valve gate control for opening and closing the valve. |
 
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
+
 ### connections
 
 | Type | Label | Description |
@@ -976,6 +1018,12 @@ The valve allows gases to pass across the two directional valve.
 - Cost: $150
 - Tags: basic,fluid,filter
 - File: relief_valve_gas.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
 
 ### connections
 
@@ -1134,6 +1182,12 @@ An Impeller that will force fluid through the system when torque is applied.
 - Tags: 
 - File: turbocharger.xml
 
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
+
 ### connections
 
 | Type | Label | Description |
@@ -1155,6 +1209,12 @@ An Impeller that will force fluid through the system when torque is applied.
 - Cost: $40
 - Tags: 
 - File: turbocharger_small.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
 
 ### connections
 
@@ -1184,6 +1244,12 @@ Connect to an inlet and outlet to create a pumping system to move fluid around a
 | --- | --- | --- |
 | on/off | On/Off | Controls whether or not the fluid is being pumped. |
 
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
+
 ### connections
 
 | Type | Label | Description |
@@ -1205,6 +1271,12 @@ The valve allows liquids to pass across the two directional valve.
 - Cost: $150
 - Tags: basic,fluid,filter
 - File: relief_valve_liquid.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
 
 ### connections
 
