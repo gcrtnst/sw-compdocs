@@ -1210,6 +1210,7 @@ Draw a rope logic link between two Rope Nodes to form a cable. Can be extended a
 | on/off | On/Off Input | On/Off data to send to the connected anchor. |
 | video | Video Data Send | Video data to send to the connected anchor. |
 | audio | Audio Data Send | Audio data to send to the connected anchor. |
+| number | Speed | The speed of the winch clamped to a relative range of -1 to 1. |
 
 ### logic outputs
 
@@ -1330,6 +1331,7 @@ Draw a rope logic link between two Rope Nodes to form a cable. Can be extended a
 | on/off | On/Off Input | On/Off data to send to the connected anchor. |
 | video | Video Data Send | Video data to send to the connected anchor. |
 | audio | Audio Data Send | Audio data to send to the connected anchor. |
+| number | Speed | The speed of the winch clamped to a relative range of -1 to 1. |
 
 ### logic outputs
 
@@ -1486,6 +1488,7 @@ Draw a rope logic link between two Rope Nodes to form a cable. Can be extended a
 | on/off | On/Off Input | On/Off data to send to the connected anchor. |
 | video | Video Data Send | Video data to send to the connected anchor. |
 | audio | Audio Data Send | Audio data to send to the connected anchor. |
+| number | Speed | The speed of the winch clamped to a relative range of -1 to 1. |
 
 ### logic outputs
 

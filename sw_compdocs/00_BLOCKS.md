@@ -28,6 +28,12 @@ Interacting with [q] or [e] again will detach that hand. The handle can be used 
 - Tags: basic
 - File: handle.xml
 
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Is Occupied | Returns true if a player is attached to the handle. |
+
 ## Inverse Pyramid
 
 Basic inverse pyramid-shaped building block.
