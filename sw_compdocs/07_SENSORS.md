@@ -481,45 +481,6 @@ If the sensor is facing into a sealed room, only players inside that room will b
 | number | Number Detected | The number of players detected by the sensor. |
 | on/off | Detected | Outputs an on signal if any players are detected. |
 
-## Radar
-
-> [!WARNING]
-> This component is deprecated.
-
-A short range Radar that returns information about a detected object within its view.
-
-This sensor outputs the distance and angle to a detected object within its range and field of view using radio waves. (Range : 5000) (Max FOV : 0.125)
-
-### PROPERTIES
-
-- Mass: 10
-- Dimensions (WxDxH): 3x3x1
-- Cost: $1000
-- Tags: 
-- File: radar.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | FOV | The sensor's yaw field of view in turns from 0.01 to 0.125. |
-| number | Facing Yaw | The sensor's yaw direction in turns from -0.5 to 0.5. |
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | Target Distance | The distance to the target in meters. |
-| number | Signal Strength | The strength of the returned signal. |
-| number | Elevation Angle | The pitch angle between the sensor and the target in turns. |
-| on/off | Target Found | Returns if an object has been detected. |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| electric | Electric | Electrical power connection. |
-
 ## Radar (AWACS)
 
 A long range radar that returns information about a detected object within its view.
@@ -612,121 +573,6 @@ This sensor outputs the distance and relative angle to a detected object within 
 | --- | --- | --- |
 | composite | Radar Data | Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc... |
 | number | Radar Rotation | Current radar rotation from forward in turns. |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| electric | Electric | Electrical power connection. |
-
-## Radar (Dish)
-
-> [!WARNING]
-> This component is deprecated.
-
-A medium range, fixed rotation Radar that returns information about a detected object within its view.
-
-This fixed sensor outputs the distance and angle to a detected object within its range and field of view using radio waves. (Range : 20000) (Max FOV : 0.125)
-
-### PROPERTIES
-
-- Mass: 150
-- Dimensions (WxDxH): 21x11x10
-- Cost: $3000
-- Tags: 
-- File: radar_dish.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | FOV | The sensor's yaw field of view in turns from 0.01 to 0.125. |
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | Target Distance | The distance to the target in meters. |
-| number | Signal Strength | The strength of the returned signal. |
-| number | Elevation Angle | The pitch angle between the sensor and the target in turns. |
-| on/off | Target Found | Returns if an object has been detected. |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| electric | Electric | Electrical power connection. |
-
-## Radar (Huge)
-
-> [!WARNING]
-> This component is deprecated.
-
-A long range, multi-target Radar that returns detailed information through composite channels about detected objects within its view.
-
-This sensor outputs the distance and relative angles to up to 8 detected objects within its range and field of view using radio waves and outputs all detected targets through composite channels. (Range : 50000) (Max FOV : 0.125)
-
-### PROPERTIES
-
-- Mass: 1100
-- Dimensions (WxDxH): 37x37x5
-- Cost: $10000
-- Tags: 
-- File: radar_huge.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | FOV | The sensor's yaw field of view in turns from 0.01 to 0.125. |
-| number | Facing Yaw | The sensor's yaw direction in turns from -0.5 to 0.5. |
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| composite | Radar Data | Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc... |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| electric | Electric | Electrical power connection. |
-
-## Radar (Large)
-
-> [!WARNING]
-> This component is deprecated.
-
-A medium range, highly configurable Radar that returns detailed information about a detected object within its view.
-
-This sensor outputs the distance and relative angles to a detected object within its range and field of view using radio waves. This sensor uniquely allows the changing of it's pitch direction. (Range : 20000) (Max FOV : 0.250)
-
-### PROPERTIES
-
-- Mass: 300
-- Dimensions (WxDxH): 7x7x16
-- Cost: $5000
-- Tags: 
-- File: radar_large.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | FOV | The sensor's yaw and pitch field of view in turns from 0.01 to 0.125. |
-| number | Facing Yaw | The sensor's yaw direction in turns from -0.5 to 0.5. |
-| number | Facing Pitch | The sensor's pitch direction in turns from -0.25 to 0.25. |
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | Target Distance | The distance to the target in meters. |
-| number | Signal Strength | The strength of the returned signal. |
-| number | Elevation Angle | The pitch angle between the sensor and the target in turns. |
-| number | Azimuth Angle | The yaw angle between the sensor and the target in turns. |
-| on/off | Target Found | Returns if an object has been detected. |
 
 ### connections
 
@@ -1125,3 +971,157 @@ The sensor outputs the wind direction relative to the orientation of the base of
 | --- | --- | --- |
 | number | Wind Speed | The relative wind velocity. |
 | number | Wind Direction | The direction of the wind relative to the component. |
+
+## Radar (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+A short range Radar that returns information about a detected object within its view.
+
+This sensor outputs the distance and angle to a detected object within its range and field of view using radio waves. (Range : 5000) (Max FOV : 0.125)
+
+### PROPERTIES
+
+- Mass: 10
+- Dimensions (WxDxH): 3x3x1
+- Cost: $1000
+- Tags: 
+- File: radar.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | FOV | The sensor's yaw field of view in turns from 0.01 to 0.125. |
+| number | Facing Yaw | The sensor's yaw direction in turns from -0.5 to 0.5. |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Target Distance | The distance to the target in meters. |
+| number | Signal Strength | The strength of the returned signal. |
+| number | Elevation Angle | The pitch angle between the sensor and the target in turns. |
+| on/off | Target Found | Returns if an object has been detected. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Electric | Electrical power connection. |
+
+## Radar (Dish) (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+A medium range, fixed rotation Radar that returns information about a detected object within its view.
+
+This fixed sensor outputs the distance and angle to a detected object within its range and field of view using radio waves. (Range : 20000) (Max FOV : 0.125)
+
+### PROPERTIES
+
+- Mass: 150
+- Dimensions (WxDxH): 21x11x10
+- Cost: $3000
+- Tags: 
+- File: radar_dish.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | FOV | The sensor's yaw field of view in turns from 0.01 to 0.125. |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Target Distance | The distance to the target in meters. |
+| number | Signal Strength | The strength of the returned signal. |
+| number | Elevation Angle | The pitch angle between the sensor and the target in turns. |
+| on/off | Target Found | Returns if an object has been detected. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Electric | Electrical power connection. |
+
+## Radar (Huge) (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+A long range, multi-target Radar that returns detailed information through composite channels about detected objects within its view.
+
+This sensor outputs the distance and relative angles to up to 8 detected objects within its range and field of view using radio waves and outputs all detected targets through composite channels. (Range : 50000) (Max FOV : 0.125)
+
+### PROPERTIES
+
+- Mass: 1100
+- Dimensions (WxDxH): 37x37x5
+- Cost: $10000
+- Tags: 
+- File: radar_huge.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | FOV | The sensor's yaw field of view in turns from 0.01 to 0.125. |
+| number | Facing Yaw | The sensor's yaw direction in turns from -0.5 to 0.5. |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| composite | Radar Data | Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc... |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Electric | Electrical power connection. |
+
+## Radar (Large) (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+A medium range, highly configurable Radar that returns detailed information about a detected object within its view.
+
+This sensor outputs the distance and relative angles to a detected object within its range and field of view using radio waves. This sensor uniquely allows the changing of it's pitch direction. (Range : 20000) (Max FOV : 0.250)
+
+### PROPERTIES
+
+- Mass: 300
+- Dimensions (WxDxH): 7x7x16
+- Cost: $5000
+- Tags: 
+- File: radar_large.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | FOV | The sensor's yaw and pitch field of view in turns from 0.01 to 0.125. |
+| number | Facing Yaw | The sensor's yaw direction in turns from -0.5 to 0.5. |
+| number | Facing Pitch | The sensor's pitch direction in turns from -0.25 to 0.25. |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Target Distance | The distance to the target in meters. |
+| number | Signal Strength | The strength of the returned signal. |
+| number | Elevation Angle | The pitch angle between the sensor and the target in turns. |
+| number | Azimuth Angle | The yaw angle between the sensor and the target in turns. |
+| on/off | Target Found | Returns if an object has been detected. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Electric | Electrical power connection. |

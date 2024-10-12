@@ -711,50 +711,6 @@ It takes the current measured output of a system or sensor, and a desired target
 | --- | --- | --- |
 | number | Control Output | The output computed by the controller. |
 
-## Power Add
-
-> [!WARNING]
-> This component is deprecated.
-
-Combines the outputs of two engines, allowing you to connect multiple engines to the same input.
-
-### PROPERTIES
-
-- Mass: 1
-- Dimensions (WxDxH): 2x2x1
-- Cost: $20
-- Tags: 
-- File: gate_torque_add.xml
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| power | Combined Power | Outputs the combined power of engine 1 and 2. |
-
-## Power Meter
-
-> [!WARNING]
-> This component is deprecated.
-
-The power meter allows you to take a measurement of how much power is being output from an engine to a specific component.
-
-To prevent a loss of power, it should be connected in series between the engine and its receiving component.
-
-### PROPERTIES
-
-- Mass: 1
-- Dimensions (WxDxH): 2x2x1
-- Cost: $20
-- Tags: 
-- File: gate_torque_multimeter.xml
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| power | Relay | Relays the power received from an engine. |
-
 ## Push to Toggle
 
 This component has an internal on/off switch that is toggled every time a new on signal is sent to its input.
@@ -860,35 +816,6 @@ A lower and upper bound to the threshold must be set. The output is set to on if
 | --- | --- | --- |
 | on/off | Within Threshold | Outputs an on signal when the input value is within the set threshold. |
 
-## Train Junction Controller
-
-> [!WARNING]
-> This component is deprecated.
-
-This component has an internal on/off switch that is toggled every time a new on signal is sent to its input.
-
-This can allow regular push buttons to act as toggle buttons.
-
-### PROPERTIES
-
-- Mass: 1
-- Dimensions (WxDxH): 1x2x1
-- Cost: $20
-- Tags: 
-- File: gate_train_junction.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| on/off | Toggle Signal | An on signal toggles the internal on/off switch. |
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| on/off | Internal State | The output of the internal on/off switch. |
-
 ## Trigonometry
 
 Provides a set of basic trigonometry functions.
@@ -968,3 +895,76 @@ The output will be switched on if only one of the signals are on. The output wil
 | Type | Label | Description |
 | --- | --- | --- |
 | on/off | A XOR B | Outputs an on signal if only A is on, or only B is on. The output is off if A and B are both on or off. |
+
+## Power Add (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+Combines the outputs of two engines, allowing you to connect multiple engines to the same input.
+
+### PROPERTIES
+
+- Mass: 1
+- Dimensions (WxDxH): 2x2x1
+- Cost: $20
+- Tags: 
+- File: gate_torque_add.xml
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| power | Combined Power | Outputs the combined power of engine 1 and 2. |
+
+## Power Meter (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+The power meter allows you to take a measurement of how much power is being output from an engine to a specific component.
+
+To prevent a loss of power, it should be connected in series between the engine and its receiving component.
+
+### PROPERTIES
+
+- Mass: 1
+- Dimensions (WxDxH): 2x2x1
+- Cost: $20
+- Tags: 
+- File: gate_torque_multimeter.xml
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| power | Relay | Relays the power received from an engine. |
+
+## Train Junction Controller (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+This component has an internal on/off switch that is toggled every time a new on signal is sent to its input.
+
+This can allow regular push buttons to act as toggle buttons.
+
+### PROPERTIES
+
+- Mass: 1
+- Dimensions (WxDxH): 1x2x1
+- Cost: $20
+- Tags: 
+- File: gate_train_junction.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Toggle Signal | An on signal toggles the internal on/off switch. |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Internal State | The output of the internal on/off switch. |

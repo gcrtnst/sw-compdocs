@@ -446,23 +446,6 @@ A single step that can be used at the top of a staircase to make it flush with a
 - Tags: step,basic
 - File: stair_top.xml
 
-## Static Block
-
-> [!WARNING]
-> This component is deprecated.
-
-Static root block used as a base for all vehicles.
-
-This block cannot be removed.
-
-### PROPERTIES
-
-- Mass: 1
-- Dimensions (WxDxH): 1x1x1
-- Cost: $10
-- Tags: 
-- File: 01_block_static.xml
-
 ## Wedge
 
 Basic wedge-shaped building block.
@@ -518,3 +501,20 @@ Weight blocks have a larger impact on the vehicle's centre of mass, making them 
 - Cost: $5
 - Tags: basic
 - File: 01_block_weight.xml
+
+## Static Block (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+Static root block used as a base for all vehicles.
+
+This block cannot be removed.
+
+### PROPERTIES
+
+- Mass: 1
+- Dimensions (WxDxH): 1x1x1
+- Cost: $10
+- Tags: 
+- File: 01_block_static.xml

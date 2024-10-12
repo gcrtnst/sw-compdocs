@@ -381,60 +381,6 @@ Fluid can flow in and out of the port as part of a fluid system.
 | --- | --- | --- |
 | fluid | Fluid | Allows fluid to flow in and out of an enclosed volume or the ocean. |
 
-## Fluid Filter
-
-> [!WARNING]
-> This component is deprecated.
-
-The fluid filter only allows certain types of fluid across the valve.
-
-The valve can be configured to select which fluids may pass across the two directional valve.
-
-### PROPERTIES
-
-- Mass: 5
-- Dimensions (WxDxH): 1x1x2
-- Cost: $400
-- Tags: basic
-- File: fluid_filter.xml
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | Flow Rate | Fluid flow rate in L/s. |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| fluid | Fluid A | Fluid connection. |
-| fluid | Fluid B | Fluid connection. |
-
-## Fluid Filter
-
-> [!WARNING]
-> This component is deprecated.
-
-The fluid filter can prevent liquids or gases crossing the valve.
-
-The valve can be configured to select which fluid groups may pass across the two directional valve. Liquids or gases.
-
-### PROPERTIES
-
-- Mass: 5
-- Dimensions (WxDxH): 1x1x2
-- Cost: $400
-- Tags: basic
-- File: fluid_filter_v2.xml
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| fluid | Fluid A | Fluid connection. |
-| fluid | Fluid B | Fluid connection. |
-
 ## Fluid Flow Valve
 
 A one way valve for controlling fluid flow.
@@ -696,29 +642,6 @@ Place the port inside of an enclosed volume to connect to that volume, or outsid
 - Cost: $50
 - Tags: air,basic
 - File: water_inlet.xml
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| fluid | Fluid | Allows fluid to flow in and out of an enclosed volume or the ocean. |
-
-## Fluid Port
-
-> [!WARNING]
-> This component is deprecated.
-
-Port used to allow fluid in and out of a fluid system.
-
-Place the port inside of an enclosed volume to connect to that volume, or outside of the vehicle to connect to the ocean.
-
-### PROPERTIES
-
-- Mass: 1
-- Dimensions (WxDxH): 1x1x2
-- Cost: $50
-- Tags: pump
-- File: water_outlet.xml
 
 ### connections
 
@@ -1393,3 +1316,80 @@ When open, the steam whistle produces sound as steam flows through the pipe conn
 | Type | Label | Description |
 | --- | --- | --- |
 | fluid | Fluid | Allows steam to flow out. |
+
+## Fluid Filter (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+The fluid filter only allows certain types of fluid across the valve.
+
+The valve can be configured to select which fluids may pass across the two directional valve.
+
+### PROPERTIES
+
+- Mass: 5
+- Dimensions (WxDxH): 1x1x2
+- Cost: $400
+- Tags: basic
+- File: fluid_filter.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Flow Rate | Fluid flow rate in L/s. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| fluid | Fluid A | Fluid connection. |
+| fluid | Fluid B | Fluid connection. |
+
+## Fluid Filter (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+The fluid filter can prevent liquids or gases crossing the valve.
+
+The valve can be configured to select which fluid groups may pass across the two directional valve. Liquids or gases.
+
+### PROPERTIES
+
+- Mass: 5
+- Dimensions (WxDxH): 1x1x2
+- Cost: $400
+- Tags: basic
+- File: fluid_filter_v2.xml
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| fluid | Fluid A | Fluid connection. |
+| fluid | Fluid B | Fluid connection. |
+
+## Fluid Port (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+Port used to allow fluid in and out of a fluid system.
+
+Place the port inside of an enclosed volume to connect to that volume, or outside of the vehicle to connect to the ocean.
+
+### PROPERTIES
+
+- Mass: 1
+- Dimensions (WxDxH): 1x1x2
+- Cost: $50
+- Tags: pump
+- File: water_outlet.xml
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| fluid | Fluid | Allows fluid to flow in and out of an enclosed volume or the ocean. |

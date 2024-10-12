@@ -1143,49 +1143,6 @@ When enabled, the heater will warm either the compartment it is within or any pl
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
 
-## Hose
-
-> [!WARNING]
-> This component is deprecated.
-
-A building block attached to the end of a mechanical hose that can be raised and lowered.
-
-This can be used to transport water between Two bodies. Two on/off signals are used to control whether the hose is moving up (towards the base) or down (away from the base). A number output allows you to measure the hose's current length if necessary. The maximum length of the hose is 16 metres (64 blocks). The speed of the hose mechanism can be configured by selecting this component with the select tool.
-
-### PROPERTIES
-
-- Mass: 45
-  - Parent Mass: 25
-  - Child Mass: 20
-- Dimensions (WxDxH): 3x5x4
-  - Parent Dimensions (WxDxH): 3x3x4
-  - Child Dimensions (WxDxH): 1x1x1
-- Cost: $100
-- Tags: 
-- Parent File: water_hose.xml
-- Child File: water_hose_b.xml
-
-### logic inputs
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | on/off | Hose Up | Raises the hose up when receiving an on signal. |
-| Parent | on/off | Hose Down | Lowers the hose down when receiving an on signal. |
-
-### logic outputs
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | number | Hose Length | The current length of the hose in metres. |
-
-### connections
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | fluid | Fluid | Fluid connection for the hose coil. |
-| Parent | electric | Electric | Electrical power connection. |
-| Child | fluid | Fluid | Fluid connection for the end of the hose. |
-
 ## Huge Winch
 
 A mechanical winch that can transfer data/electric/fluid through an attached cable, with an extension length of 600m.
@@ -1229,49 +1186,6 @@ Draw a rope logic link between two Rope Nodes to form a cable. Can be extended a
 | rope | Rope Node |  |
 | electric | Electric Node |  |
 | fluid | Fluid | Fluid connection for the hose coil. |
-
-## Huge Winch
-
-> [!WARNING]
-> This component is deprecated.
-
-A building block attached to the end of a 500m mechanical winch that can be raised and lowered.
-
-The winch is operated electrically, and outputs its current length.
-
-### PROPERTIES
-
-- Mass: 420
-  - Parent Mass: 400
-  - Child Mass: 20
-- Dimensions (WxDxH): 9x9x7
-  - Parent Dimensions (WxDxH): 9x7x7
-  - Child Dimensions (WxDxH): 1x1x1
-- Cost: $5000
-- Tags: 
-- Parent File: winch_huge_a.xml
-- Child File: winch_b.xml
-
-### logic inputs
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | on/off | Up | Raises the winch cable up when receiving an on signal. |
-| Parent | on/off | Down | Lowers the winch cable down when receiving an on signal. |
-
-### logic outputs
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | number | Length | The current length of the winch cable in metres. |
-
-### connections
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | electric | Electric | Electrical power connection. |
-| Parent | fluid | Fluid | Fluid connection for the hose coil. |
-| Child | fluid | Fluid | Fluid connection for the end of the hose. |
 
 ## Landing Float
 
@@ -1350,49 +1264,6 @@ Draw a rope logic link between two Rope Nodes to form a cable. Can be extended a
 | rope | Rope Node |  |
 | electric | Electric Node |  |
 | fluid | Fluid | Fluid connection for the hose coil. |
-
-## Large Winch
-
-> [!WARNING]
-> This component is deprecated.
-
-A building block attached to the end of a 100m mechanical winch that can be raised and lowered.
-
-The winch is operated electrically, and outputs its current length.
-
-### PROPERTIES
-
-- Mass: 120
-  - Parent Mass: 100
-  - Child Mass: 20
-- Dimensions (WxDxH): 3x4x4
-  - Parent Dimensions (WxDxH): 3x3x4
-  - Child Dimensions (WxDxH): 1x1x1
-- Cost: $800
-- Tags: 
-- Parent File: winch_large_a.xml
-- Child File: winch_b.xml
-
-### logic inputs
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | on/off | Up | Raises the winch cable up when receiving an on signal. |
-| Parent | on/off | Down | Lowers the winch cable down when receiving an on signal. |
-
-### logic outputs
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | number | Length | The current length of the winch cable in metres. |
-
-### connections
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | electric | Electric | Electrical power connection. |
-| Parent | fluid | Fluid | Fluid connection for the hose coil. |
-| Child | fluid | Fluid | Fluid connection for the end of the hose. |
 
 ## Light
 
@@ -1507,49 +1378,6 @@ Draw a rope logic link between two Rope Nodes to form a cable. Can be extended a
 | rope | Rope Node |  |
 | electric | Electric Node |  |
 | fluid | Fluid | Fluid connection for the hose coil. |
-
-## Medium Winch
-
-> [!WARNING]
-> This component is deprecated.
-
-A building block attached to the end of a 20m mechanical winch that can be raised and lowered.
-
-The winch is operated electrically, and outputs its current length.
-
-### PROPERTIES
-
-- Mass: 40
-  - Parent Mass: 20
-  - Child Mass: 20
-- Dimensions (WxDxH): 3x3x2
-  - Parent Dimensions (WxDxH): 3x1x2
-  - Child Dimensions (WxDxH): 1x1x1
-- Cost: $250
-- Tags: 
-- Parent File: winch_a.xml
-- Child File: winch_b.xml
-
-### logic inputs
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | on/off | Up | Raises the winch cable up when receiving an on signal. |
-| Parent | on/off | Down | Lowers the winch cable down when receiving an on signal. |
-
-### logic outputs
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | number | Length | The current length of the winch cable in metres. |
-
-### connections
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | electric | Electric | Electrical power connection. |
-| Parent | fluid | Fluid | Fluid connection for the hose coil. |
-| Child | fluid | Fluid | Fluid connection for the end of the hose. |
 
 ## Megaphone Speaker (Large)
 
@@ -1993,29 +1821,6 @@ You can get in and out of the seat by interacting with it using [f]. You can pla
 
 ## Passenger Seat
 
-> [!WARNING]
-> This component is deprecated.
-
-A basic passenger seat.
-
-You can get in and out of the seat by interacting with it using [f]. You can place a rescued survivor in any seat by using [f] while carrying them.
-
-### PROPERTIES
-
-- Mass: 20
-- Dimensions (WxDxH): 3x3x5
-- Cost: $50
-- Tags: 
-- File: passenger_seat.xml
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| on/off | Occupied | Outputs an on signal if this seat is occupied by a character. |
-
-## Passenger Seat
-
 A basic passenger seat.
 
 You can get in and out of the seat by interacting with it using [f]. You can place a rescued survivor in any seat by using [f] while carrying them.
@@ -2299,43 +2104,6 @@ Draw a rope logic link between two Rope Nodes to form a cable. Can be extended a
 | electric | Electric Node |  |
 | fluid | Fluid | Fluid connection for the hose coil. |
 
-## Small Winch
-
-> [!WARNING]
-> This component is deprecated.
-
-A building block attached to the end of a 10m mechanical winch that can be raised and lowered.
-
-The winch is operated electrically, and outputs its current length.
-
-### PROPERTIES
-
-- Mass: 30
-  - Parent Mass: 10
-  - Child Mass: 20
-- Dimensions (WxDxH): 1x3x2
-  - Parent Dimensions (WxDxH): 1x1x2
-  - Child Dimensions (WxDxH): 1x1x1
-- Cost: $100
-- Tags: 
-- Parent File: winch_electric.xml
-- Child File: winch_electric_b.xml
-
-### logic inputs
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | on/off | Up |  |
-| Parent | on/off | Down |  |
-
-### connections
-
-| Body | Type | Label | Description |
-| --- | --- | --- | --- |
-| Parent | electric | Electric | Electrical power connection. |
-| Parent | fluid | Fluid | Fluid connection for the hose coil. |
-| Child | fluid | Fluid | Fluid connection for the end of the hose. |
-
 ## Sonar Noisemaker
 
 A distracting device for sonar.
@@ -2427,3 +2195,235 @@ The parachute will deploy when receiving an on signal, and will close when not. 
 | Type | Label | Description |
 | --- | --- | --- |
 | on/off | Deploy | Deploy the parachute. The parachute will close when it stalls or stops receiving an on signal. |
+
+## Hose (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+A building block attached to the end of a mechanical hose that can be raised and lowered.
+
+This can be used to transport water between Two bodies. Two on/off signals are used to control whether the hose is moving up (towards the base) or down (away from the base). A number output allows you to measure the hose's current length if necessary. The maximum length of the hose is 16 metres (64 blocks). The speed of the hose mechanism can be configured by selecting this component with the select tool.
+
+### PROPERTIES
+
+- Mass: 45
+  - Parent Mass: 25
+  - Child Mass: 20
+- Dimensions (WxDxH): 3x5x4
+  - Parent Dimensions (WxDxH): 3x3x4
+  - Child Dimensions (WxDxH): 1x1x1
+- Cost: $100
+- Tags: 
+- Parent File: water_hose.xml
+- Child File: water_hose_b.xml
+
+### logic inputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | on/off | Hose Up | Raises the hose up when receiving an on signal. |
+| Parent | on/off | Hose Down | Lowers the hose down when receiving an on signal. |
+
+### logic outputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | number | Hose Length | The current length of the hose in metres. |
+
+### connections
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | fluid | Fluid | Fluid connection for the hose coil. |
+| Parent | electric | Electric | Electrical power connection. |
+| Child | fluid | Fluid | Fluid connection for the end of the hose. |
+
+## Huge Winch (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+A building block attached to the end of a 500m mechanical winch that can be raised and lowered.
+
+The winch is operated electrically, and outputs its current length.
+
+### PROPERTIES
+
+- Mass: 420
+  - Parent Mass: 400
+  - Child Mass: 20
+- Dimensions (WxDxH): 9x9x7
+  - Parent Dimensions (WxDxH): 9x7x7
+  - Child Dimensions (WxDxH): 1x1x1
+- Cost: $5000
+- Tags: 
+- Parent File: winch_huge_a.xml
+- Child File: winch_b.xml
+
+### logic inputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | on/off | Up | Raises the winch cable up when receiving an on signal. |
+| Parent | on/off | Down | Lowers the winch cable down when receiving an on signal. |
+
+### logic outputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | number | Length | The current length of the winch cable in metres. |
+
+### connections
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | electric | Electric | Electrical power connection. |
+| Parent | fluid | Fluid | Fluid connection for the hose coil. |
+| Child | fluid | Fluid | Fluid connection for the end of the hose. |
+
+## Large Winch (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+A building block attached to the end of a 100m mechanical winch that can be raised and lowered.
+
+The winch is operated electrically, and outputs its current length.
+
+### PROPERTIES
+
+- Mass: 120
+  - Parent Mass: 100
+  - Child Mass: 20
+- Dimensions (WxDxH): 3x4x4
+  - Parent Dimensions (WxDxH): 3x3x4
+  - Child Dimensions (WxDxH): 1x1x1
+- Cost: $800
+- Tags: 
+- Parent File: winch_large_a.xml
+- Child File: winch_b.xml
+
+### logic inputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | on/off | Up | Raises the winch cable up when receiving an on signal. |
+| Parent | on/off | Down | Lowers the winch cable down when receiving an on signal. |
+
+### logic outputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | number | Length | The current length of the winch cable in metres. |
+
+### connections
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | electric | Electric | Electrical power connection. |
+| Parent | fluid | Fluid | Fluid connection for the hose coil. |
+| Child | fluid | Fluid | Fluid connection for the end of the hose. |
+
+## Medium Winch (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+A building block attached to the end of a 20m mechanical winch that can be raised and lowered.
+
+The winch is operated electrically, and outputs its current length.
+
+### PROPERTIES
+
+- Mass: 40
+  - Parent Mass: 20
+  - Child Mass: 20
+- Dimensions (WxDxH): 3x3x2
+  - Parent Dimensions (WxDxH): 3x1x2
+  - Child Dimensions (WxDxH): 1x1x1
+- Cost: $250
+- Tags: 
+- Parent File: winch_a.xml
+- Child File: winch_b.xml
+
+### logic inputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | on/off | Up | Raises the winch cable up when receiving an on signal. |
+| Parent | on/off | Down | Lowers the winch cable down when receiving an on signal. |
+
+### logic outputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | number | Length | The current length of the winch cable in metres. |
+
+### connections
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | electric | Electric | Electrical power connection. |
+| Parent | fluid | Fluid | Fluid connection for the hose coil. |
+| Child | fluid | Fluid | Fluid connection for the end of the hose. |
+
+## Passenger Seat (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+A basic passenger seat.
+
+You can get in and out of the seat by interacting with it using [f]. You can place a rescued survivor in any seat by using [f] while carrying them.
+
+### PROPERTIES
+
+- Mass: 20
+- Dimensions (WxDxH): 3x3x5
+- Cost: $50
+- Tags: 
+- File: passenger_seat.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Occupied | Outputs an on signal if this seat is occupied by a character. |
+
+## Small Winch (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+A building block attached to the end of a 10m mechanical winch that can be raised and lowered.
+
+The winch is operated electrically, and outputs its current length.
+
+### PROPERTIES
+
+- Mass: 30
+  - Parent Mass: 10
+  - Child Mass: 20
+- Dimensions (WxDxH): 1x3x2
+  - Parent Dimensions (WxDxH): 1x1x2
+  - Child Dimensions (WxDxH): 1x1x1
+- Cost: $100
+- Tags: 
+- Parent File: winch_electric.xml
+- Child File: winch_electric_b.xml
+
+### logic inputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | on/off | Up |  |
+| Parent | on/off | Down |  |
+
+### connections
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | electric | Electric | Electrical power connection. |
+| Parent | fluid | Fluid | Fluid connection for the hose coil. |
+| Child | fluid | Fluid | Fluid connection for the end of the hose. |

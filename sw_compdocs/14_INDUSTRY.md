@@ -309,35 +309,6 @@ A portable trap for catching lobsters and crabs on the sea floor.
 | --- | --- | --- |
 | number | Fill Level |  |
 
-## Mineral Converter
-
-> [!WARNING]
-> This component is deprecated.
-
-A basic mineral duct.
-
-Transports minerals through the connected system.
-
-### PROPERTIES
-
-- Mass: 80
-- Dimensions (WxDxH): 3x3x3
-- Cost: $250000
-- Tags: steam,coal
-- File: mineral_converter.xml
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | Mineral Level |  |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| fluid | water |  |
-
 ## Net Anchor
 
 An anchor point for a fishing net.
@@ -858,3 +829,32 @@ Can be toggled to move resources through the vacuum. The vacuum can transport re
 | Type | Label | Description |
 | --- | --- | --- |
 | electric | Electric | Electrical input. |
+
+## Mineral Converter (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+A basic mineral duct.
+
+Transports minerals through the connected system.
+
+### PROPERTIES
+
+- Mass: 80
+- Dimensions (WxDxH): 3x3x3
+- Cost: $250000
+- Tags: steam,coal
+- File: mineral_converter.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Mineral Level |  |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| fluid | water |  |

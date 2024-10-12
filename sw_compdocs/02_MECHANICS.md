@@ -289,68 +289,6 @@ Two fluid connectors will attach when they are within close proximity. When conn
 | --- | --- | --- |
 | fluid | Fluid | Fluid connection to link to another fluid connector. |
 
-## Gearbox
-
-> [!WARNING]
-> This component is deprecated.
-
-Gearbox for changing the torque and speed across power connections.
-
-The ratio can be toggled between two values which can be set in the properties.
-
-### PROPERTIES
-
-- Mass: 8
-- Dimensions (WxDxH): 1x2x2
-- Cost: $100
-- Tags: 
-- File: torque_gearbox.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| on/off | Gear Switch | Toggle between the two gear ratios. |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| power | RPS A | Power connection A. |
-| power | RPS B | Power connection B. |
-| electric | Electric | The electric connection to power the component. |
-
-## Gearbox
-
-> [!WARNING]
-> This component is deprecated.
-
-Gearbox for changing the torque and speed across power connections.
-
-The ratio can be toggled between two values which can be set in the properties. This gearbox operates up to a torque difference of 4000.
-
-### PROPERTIES
-
-- Mass: 8
-- Dimensions (WxDxH): 1x2x2
-- Cost: $100
-- Tags: 
-- File: torque_gearbox_2.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| on/off | Gear Switch | Toggle between the two gear ratios. |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| power | RPS A | Power connection A. |
-| power | RPS B | Power connection B. |
-| electric | Electric | The electric connection to power the component. |
-
 ## Gearbox 1x1
 
 Gearbox for changing the torque and speed across power connections.
@@ -1752,3 +1690,65 @@ Inputting a value of 0 will cause it to stop. The pivot's current rotation can b
 | Body | Type | Label | Description |
 | --- | --- | --- | --- |
 | Parent | electric | Electric | Electrical power connection. |
+
+## Gearbox (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+Gearbox for changing the torque and speed across power connections.
+
+The ratio can be toggled between two values which can be set in the properties.
+
+### PROPERTIES
+
+- Mass: 8
+- Dimensions (WxDxH): 1x2x2
+- Cost: $100
+- Tags: 
+- File: torque_gearbox.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Gear Switch | Toggle between the two gear ratios. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| power | RPS A | Power connection A. |
+| power | RPS B | Power connection B. |
+| electric | Electric | The electric connection to power the component. |
+
+## Gearbox (Deprecated)
+
+> [!WARNING]
+> This component is deprecated.
+
+Gearbox for changing the torque and speed across power connections.
+
+The ratio can be toggled between two values which can be set in the properties. This gearbox operates up to a torque difference of 4000.
+
+### PROPERTIES
+
+- Mass: 8
+- Dimensions (WxDxH): 1x2x2
+- Cost: $100
+- Tags: 
+- File: torque_gearbox_2.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Gear Switch | Toggle between the two gear ratios. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| power | RPS A | Power connection A. |
+| power | RPS B | Power connection B. |
+| electric | Electric | The electric connection to power the component. |
