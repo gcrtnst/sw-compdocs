@@ -1143,7 +1143,7 @@ When enabled, the heater will warm either the compartment it is within or any pl
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
 
-## Hose (Deprecated)
+## Hose
 
 > [!WARNING]
 > This component is deprecated.
@@ -1230,7 +1230,7 @@ Draw a rope logic link between two Rope Nodes to form a cable. Can be extended a
 | electric | Electric Node |  |
 | fluid | Fluid | Fluid connection for the hose coil. |
 
-## Huge Winch (Deprecated)
+## Huge Winch
 
 > [!WARNING]
 > This component is deprecated.
@@ -1351,7 +1351,7 @@ Draw a rope logic link between two Rope Nodes to form a cable. Can be extended a
 | electric | Electric Node |  |
 | fluid | Fluid | Fluid connection for the hose coil. |
 
-## Large Winch (Deprecated)
+## Large Winch
 
 > [!WARNING]
 > This component is deprecated.
@@ -1508,7 +1508,7 @@ Draw a rope logic link between two Rope Nodes to form a cable. Can be extended a
 | electric | Electric Node |  |
 | fluid | Fluid | Fluid connection for the hose coil. |
 
-## Medium Winch (Deprecated)
+## Medium Winch
 
 > [!WARNING]
 > This component is deprecated.
@@ -1993,26 +1993,6 @@ You can get in and out of the seat by interacting with it using [f]. You can pla
 
 ## Passenger Seat
 
-A basic passenger seat.
-
-You can get in and out of the seat by interacting with it using [f]. You can place a rescued survivor in any seat by using [f] while carrying them.
-
-### PROPERTIES
-
-- Mass: 6
-- Dimensions (WxDxH): 3x3x5
-- Cost: $50
-- Tags: basic,seat
-- File: seat_passenger.xml
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| on/off | Occupied | Outputs an on signal if this seat is occupied by a character. |
-
-## Passenger Seat (Deprecated)
-
 > [!WARNING]
 > This component is deprecated.
 
@@ -2027,6 +2007,26 @@ You can get in and out of the seat by interacting with it using [f]. You can pla
 - Cost: $50
 - Tags: 
 - File: passenger_seat.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Occupied | Outputs an on signal if this seat is occupied by a character. |
+
+## Passenger Seat
+
+A basic passenger seat.
+
+You can get in and out of the seat by interacting with it using [f]. You can place a rescued survivor in any seat by using [f] while carrying them.
+
+### PROPERTIES
+
+- Mass: 6
+- Dimensions (WxDxH): 3x3x5
+- Cost: $50
+- Tags: basic,seat
+- File: seat_passenger.xml
 
 ### logic outputs
 
@@ -2299,7 +2299,7 @@ Draw a rope logic link between two Rope Nodes to form a cable. Can be extended a
 | electric | Electric Node |  |
 | fluid | Fluid | Fluid connection for the hose coil. |
 
-## Small Winch (Deprecated)
+## Small Winch
 
 > [!WARNING]
 > This component is deprecated.

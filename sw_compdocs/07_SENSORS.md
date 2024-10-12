@@ -481,6 +481,45 @@ If the sensor is facing into a sealed room, only players inside that room will b
 | number | Number Detected | The number of players detected by the sensor. |
 | on/off | Detected | Outputs an on signal if any players are detected. |
 
+## Radar
+
+> [!WARNING]
+> This component is deprecated.
+
+A short range Radar that returns information about a detected object within its view.
+
+This sensor outputs the distance and angle to a detected object within its range and field of view using radio waves. (Range : 5000) (Max FOV : 0.125)
+
+### PROPERTIES
+
+- Mass: 10
+- Dimensions (WxDxH): 3x3x1
+- Cost: $1000
+- Tags: 
+- File: radar.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | FOV | The sensor's yaw field of view in turns from 0.01 to 0.125. |
+| number | Facing Yaw | The sensor's yaw direction in turns from -0.5 to 0.5. |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Target Distance | The distance to the target in meters. |
+| number | Signal Strength | The strength of the returned signal. |
+| number | Elevation Angle | The pitch angle between the sensor and the target in turns. |
+| on/off | Target Found | Returns if an object has been detected. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Electric | Electrical power connection. |
+
 ## Radar (AWACS)
 
 A long range radar that returns information about a detected object within its view.
@@ -547,45 +586,6 @@ This sensor outputs the distance and relative angle to a detected object within 
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
 
-## Radar (Deprecated)
-
-> [!WARNING]
-> This component is deprecated.
-
-A short range Radar that returns information about a detected object within its view.
-
-This sensor outputs the distance and angle to a detected object within its range and field of view using radio waves. (Range : 5000) (Max FOV : 0.125)
-
-### PROPERTIES
-
-- Mass: 10
-- Dimensions (WxDxH): 3x3x1
-- Cost: $1000
-- Tags: 
-- File: radar.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | FOV | The sensor's yaw field of view in turns from 0.01 to 0.125. |
-| number | Facing Yaw | The sensor's yaw direction in turns from -0.5 to 0.5. |
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | Target Distance | The distance to the target in meters. |
-| number | Signal Strength | The strength of the returned signal. |
-| number | Elevation Angle | The pitch angle between the sensor and the target in turns. |
-| on/off | Target Found | Returns if an object has been detected. |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| electric | Electric | Electrical power connection. |
-
 ## Radar (Dish)
 
 A radar that returns information about a detected object within its view.
@@ -619,7 +619,7 @@ This sensor outputs the distance and relative angle to a detected object within 
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
 
-## Radar (Dish) (Deprecated)
+## Radar (Dish)
 
 > [!WARNING]
 > This component is deprecated.
@@ -657,7 +657,7 @@ This fixed sensor outputs the distance and angle to a detected object within its
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
 
-## Radar (Huge) (Deprecated)
+## Radar (Huge)
 
 > [!WARNING]
 > This component is deprecated.
@@ -693,7 +693,7 @@ This sensor outputs the distance and relative angles to up to 8 detected objects
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
 
-## Radar (Large) (Deprecated)
+## Radar (Large)
 
 > [!WARNING]
 > This component is deprecated.
@@ -863,39 +863,6 @@ The reading can be read from the sensor's number output and is measured from 0 (
 
 ## Sonar (Large)
 
-A sonar that returns information about a detected objects within 200km.
-
-This sensor outputs the relative angle to detected objects within its range using underwater sound waves. The sensor will passively detect certain noisy components such as propellers or engines but can also send out a loud ping to detect quiet underwater bodies. While the ping input is held passive signals will be supressed. After activating a ping additional detected signals will appear momentarily in the data channel as the signal returns to the sonar. Activating another ping will override the previous ping and no further data will be returned from the old signal.
-
-### PROPERTIES
-
-- Mass: 200
-- Dimensions (WxDxH): 7x7x5
-- Cost: $4000
-- Tags: 
-- File: sonar_advanced_7.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| on/off | Activate | Enable the Sonar. |
-| on/off | Ping | Send a ping and listen for return sounds. |
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| composite | Sonar Data | Outputs data for up to 16 targets. On/Off 1-16 : Target 1 Found, Target 2 Found, Etc... Values 1-32: Target 1 Pivot, Target 1 Pitch, Target 2 Pivot, Target 2 Pitch, Etc... |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| electric | Electric | Electrical power connection. |
-
-## Sonar (Large) (Deprecated)
-
 A short range Sonar that returns information about a detected underwater object within its view.
 
 This sensor outputs the distance and angle to a detected underwater object within its range and field of view using sound waves. (Range : 3000) (Max FOV : 0.125)
@@ -923,6 +890,39 @@ This sensor outputs the distance and angle to a detected underwater object withi
 | number | Signal Strength | The strength of the returned signal. |
 | number | Elevation Angle | The pitch angle between the sensor and the target in turns. |
 | on/off | Target Found | Returns if an object has been detected. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Electric | Electrical power connection. |
+
+## Sonar (Large)
+
+A sonar that returns information about a detected objects within 200km.
+
+This sensor outputs the relative angle to detected objects within its range using underwater sound waves. The sensor will passively detect certain noisy components such as propellers or engines but can also send out a loud ping to detect quiet underwater bodies. While the ping input is held passive signals will be supressed. After activating a ping additional detected signals will appear momentarily in the data channel as the signal returns to the sonar. Activating another ping will override the previous ping and no further data will be returned from the old signal.
+
+### PROPERTIES
+
+- Mass: 200
+- Dimensions (WxDxH): 7x7x5
+- Cost: $4000
+- Tags: 
+- File: sonar_advanced_7.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Activate | Enable the Sonar. |
+| on/off | Ping | Send a ping and listen for return sounds. |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| composite | Sonar Data | Outputs data for up to 16 targets. On/Off 1-16 : Target 1 Found, Target 2 Found, Etc... Values 1-32: Target 1 Pivot, Target 1 Pitch, Target 2 Pivot, Target 2 Pitch, Etc... |
 
 ### connections
 
@@ -965,40 +965,6 @@ This sensor outputs the relative angle to detected objects within its range usin
 
 ## Sonar (Small)
 
-A sonar that returns information about a detected objects within 60km.
-
-This sensor outputs the relative angle to detected objects within its range using underwater sound waves. The sensor will passively detect certain noisy components such as propellers or engines but can also send out a loud ping to detect quiet underwater bodies. While the ping input is held passive signals will be supressed. After activating a ping additional detected signals will appear momentarily in the data channel as the signal returns to the sonar. Activating another ping will override the previous ping and no further data will be returned from the old signal.
-
-### PROPERTIES
-
-- Mass: 10
-- Dimensions (WxDxH): 3x3x1
-- Cost: $1000
-- Tags: 
-- File: sonar_advanced.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| on/off | Activate | Enable the Sonar. |
-| on/off | Ping | Send a ping and listen for return sounds. |
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| composite | Sonar Data | Outputs data for up to 16 targets. On/Off 1-16 : Target 1 Found, Target 2 Found, Etc... Values 1-32: Target 1 Pivot, Target 1 Pitch, Target 2 Pivot, Target 2 Pitch, Etc... |
-| composite | Torpedo Output | Outputs x and y data for the most immediate target. Link this directly into a rocket fins component. |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| electric | Electric | Electrical power connection. |
-
-## Sonar (Small) (Deprecated)
-
 A short range Sonar that returns information about a detected underwater object within its view.
 
 This sensor outputs the distance and angle to a detected underwater object within its range and field of view using sound waves. (Range : 1000) (Max FOV : 0.125)
@@ -1026,6 +992,40 @@ This sensor outputs the distance and angle to a detected underwater object withi
 | number | Signal Strength | The strength of the returned signal. |
 | number | Elevation Angle | The pitch angle between the sensor and the target in turns. |
 | on/off | Target Found | Returns if an object has been detected. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Electric | Electrical power connection. |
+
+## Sonar (Small)
+
+A sonar that returns information about a detected objects within 60km.
+
+This sensor outputs the relative angle to detected objects within its range using underwater sound waves. The sensor will passively detect certain noisy components such as propellers or engines but can also send out a loud ping to detect quiet underwater bodies. While the ping input is held passive signals will be supressed. After activating a ping additional detected signals will appear momentarily in the data channel as the signal returns to the sonar. Activating another ping will override the previous ping and no further data will be returned from the old signal.
+
+### PROPERTIES
+
+- Mass: 10
+- Dimensions (WxDxH): 3x3x1
+- Cost: $1000
+- Tags: 
+- File: sonar_advanced.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Activate | Enable the Sonar. |
+| on/off | Ping | Send a ping and listen for return sounds. |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| composite | Sonar Data | Outputs data for up to 16 targets. On/Off 1-16 : Target 1 Found, Target 2 Found, Etc... Values 1-32: Target 1 Pivot, Target 1 Pitch, Target 2 Pivot, Target 2 Pitch, Etc... |
+| composite | Torpedo Output | Outputs x and y data for the most immediate target. Link this directly into a rocket fins component. |
 
 ### connections
 

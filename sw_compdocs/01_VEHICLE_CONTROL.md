@@ -652,6 +652,44 @@ It provides 10 number outputs that produce a standard value ranging from -1 to 1
 
 ## Radio RX Huge
 
+> [!WARNING]
+> This component is deprecated.
+
+A radio data transmitter and receiver.
+
+Sends and receives data on the specified frequencies.
+
+### PROPERTIES
+
+- Mass: 20
+- Dimensions (WxDxH): 1x1x9
+- Cost: $5000
+- Tags: 
+- File: rx_huge.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| composite | Data Send |  |
+| number | Frequency Send |  |
+| number | Frequency Recv |  |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| composite | Data Recv |  |
+| number | Signal Strength |  |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Electric |  |
+
+## Radio RX Huge
+
 A radio data transmitter and receiver.
 
 Sends and receives data on the specified frequency. Transmit Mode defaults to receive. (Max effective range at ground level : 20km)
@@ -687,7 +725,7 @@ Sends and receives data on the specified frequency. Transmit Mode defaults to re
 | --- | --- | --- |
 | electric | Electric | Electrical input. |
 
-## Radio RX Huge (Deprecated)
+## Radio RX Large
 
 > [!WARNING]
 > This component is deprecated.
@@ -698,11 +736,11 @@ Sends and receives data on the specified frequencies.
 
 ### PROPERTIES
 
-- Mass: 20
-- Dimensions (WxDxH): 1x1x9
-- Cost: $5000
+- Mass: 12
+- Dimensions (WxDxH): 1x1x5
+- Cost: $200
 - Tags: 
-- File: rx_huge.xml
+- File: rx_large.xml
 
 ### logic inputs
 
@@ -762,7 +800,7 @@ Sends and receives data on the specified frequency. Transmit Mode defaults to re
 | --- | --- | --- |
 | electric | Electric | Electrical input. |
 
-## Radio RX Large (Deprecated)
+## Radio RX Medium
 
 > [!WARNING]
 > This component is deprecated.
@@ -773,11 +811,11 @@ Sends and receives data on the specified frequencies.
 
 ### PROPERTIES
 
-- Mass: 12
-- Dimensions (WxDxH): 1x1x5
-- Cost: $200
+- Mass: 8
+- Dimensions (WxDxH): 1x1x4
+- Cost: $1000
 - Tags: 
-- File: rx_large.xml
+- File: rx_med.xml
 
 ### logic inputs
 
@@ -837,7 +875,7 @@ Sends and receives data on the specified frequency. Transmit Mode defaults to re
 | --- | --- | --- |
 | electric | Electric | Electrical input. |
 
-## Radio RX Medium (Deprecated)
+## Radio RX Small
 
 > [!WARNING]
 > This component is deprecated.
@@ -848,11 +886,11 @@ Sends and receives data on the specified frequencies.
 
 ### PROPERTIES
 
-- Mass: 8
-- Dimensions (WxDxH): 1x1x4
-- Cost: $1000
+- Mass: 5
+- Dimensions (WxDxH): 1x1x2
+- Cost: $500
 - Tags: 
-- File: rx_med.xml
+- File: rx_small.xml
 
 ### logic inputs
 
@@ -867,7 +905,6 @@ Sends and receives data on the specified frequencies.
 | Type | Label | Description |
 | --- | --- | --- |
 | composite | Data Recv |  |
-| number | Signal Strength |  |
 
 ### connections
 
@@ -910,43 +947,6 @@ Sends and receives data on the specified frequency. Transmit Mode defaults to re
 | Type | Label | Description |
 | --- | --- | --- |
 | electric | Electric | Electrical input. |
-
-## Radio RX Small (Deprecated)
-
-> [!WARNING]
-> This component is deprecated.
-
-A radio data transmitter and receiver.
-
-Sends and receives data on the specified frequencies.
-
-### PROPERTIES
-
-- Mass: 5
-- Dimensions (WxDxH): 1x1x2
-- Cost: $500
-- Tags: 
-- File: rx_small.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| composite | Data Send |  |
-| number | Frequency Send |  |
-| number | Frequency Recv |  |
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| composite | Data Recv |  |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| electric | Electric |  |
 
 ## Radio Video Recv
 

@@ -386,30 +386,6 @@ Fluid can flow in and out of the port as part of a fluid system.
 > [!WARNING]
 > This component is deprecated.
 
-The fluid filter can prevent liquids or gases crossing the valve.
-
-The valve can be configured to select which fluid groups may pass across the two directional valve. Liquids or gases.
-
-### PROPERTIES
-
-- Mass: 5
-- Dimensions (WxDxH): 1x1x2
-- Cost: $400
-- Tags: basic
-- File: fluid_filter_v2.xml
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| fluid | Fluid A | Fluid connection. |
-| fluid | Fluid B | Fluid connection. |
-
-## Fluid Filter (Deprecated)
-
-> [!WARNING]
-> This component is deprecated.
-
 The fluid filter only allows certain types of fluid across the valve.
 
 The valve can be configured to select which fluids may pass across the two directional valve.
@@ -427,6 +403,30 @@ The valve can be configured to select which fluids may pass across the two direc
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Flow Rate | Fluid flow rate in L/s. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| fluid | Fluid A | Fluid connection. |
+| fluid | Fluid B | Fluid connection. |
+
+## Fluid Filter
+
+> [!WARNING]
+> This component is deprecated.
+
+The fluid filter can prevent liquids or gases crossing the valve.
+
+The valve can be configured to select which fluid groups may pass across the two directional valve. Liquids or gases.
+
+### PROPERTIES
+
+- Mass: 5
+- Dimensions (WxDxH): 1x1x2
+- Cost: $400
+- Tags: basic
+- File: fluid_filter_v2.xml
 
 ### connections
 
@@ -703,7 +703,7 @@ Place the port inside of an enclosed volume to connect to that volume, or outsid
 | --- | --- | --- |
 | fluid | Fluid | Allows fluid to flow in and out of an enclosed volume or the ocean. |
 
-## Fluid Port (Deprecated)
+## Fluid Port
 
 > [!WARNING]
 > This component is deprecated.

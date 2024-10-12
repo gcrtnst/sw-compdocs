@@ -711,7 +711,7 @@ It takes the current measured output of a system or sensor, and a desired target
 | --- | --- | --- |
 | number | Control Output | The output computed by the controller. |
 
-## Power Add (Deprecated)
+## Power Add
 
 > [!WARNING]
 > This component is deprecated.
@@ -732,7 +732,7 @@ Combines the outputs of two engines, allowing you to connect multiple engines to
 | --- | --- | --- |
 | power | Combined Power | Outputs the combined power of engine 1 and 2. |
 
-## Power Meter (Deprecated)
+## Power Meter
 
 > [!WARNING]
 > This component is deprecated.

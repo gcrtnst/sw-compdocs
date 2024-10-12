@@ -289,7 +289,7 @@ Two fluid connectors will attach when they are within close proximity. When conn
 | --- | --- | --- |
 | fluid | Fluid | Fluid connection to link to another fluid connector. |
 
-## Gearbox (Deprecated)
+## Gearbox
 
 > [!WARNING]
 > This component is deprecated.
@@ -320,7 +320,7 @@ The ratio can be toggled between two values which can be set in the properties.
 | power | RPS B | Power connection B. |
 | electric | Electric | The electric connection to power the component. |
 
-## Gearbox (Deprecated)
+## Gearbox
 
 > [!WARNING]
 > This component is deprecated.
