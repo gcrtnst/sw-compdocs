@@ -340,6 +340,43 @@ Provide torque to begin spinning the separator, fluid output ports will separate
 | fluid | Fluid Out | Main output fluid port. |
 | fluid | Dense Fluid Out | Output port that will filter the denser fluid when the centrifuge is operating at high speed. |
 
+## Cryo Cooler
+
+A powered component that creates a temperature difference between two liquid systems.
+
+A component that cools liquid A and transfers the heat to liquid B.
+
+### PROPERTIES
+
+- Mass: 4
+- Dimensions (WxDxH): 1x0x1
+- Cost: $30
+- Tags: 
+- File: cryo_cooler.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | On/Off | Controls whether or not the component transfers heat between liquids. |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Temp A | Compartment temperature. |
+| number | Temp B | Compartment temperature. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| fluid | Liquid A In | Input liquid port for liquid that gets cooled. |
+| fluid | Liquid A Out | Output liquid port for liquid that gets cooled. |
+| fluid | Liquid B In | Input liquid port for liquid that gets warmed. |
+| fluid | Liquid B Out | Output liquid port for liquid that gets warmed. |
+| electric | Electric | Electrical power connection. |
+
 ## Desalinator
 
 A pipe that slowly converts seawater to freshwater.
