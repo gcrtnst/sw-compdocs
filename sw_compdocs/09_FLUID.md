@@ -349,7 +349,7 @@ A component that cools liquid A and transfers the heat to liquid B.
 ### PROPERTIES
 
 - Mass: 4
-- Dimensions (WxDxH): 1x0x1
+- Dimensions (WxDxH): 1x2x2
 - Cost: $30
 - Tags: 
 - File: cryo_cooler.xml
