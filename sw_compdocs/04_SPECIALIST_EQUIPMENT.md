@@ -182,6 +182,62 @@ Has an infrared mode, variable field of view, stabilized and tracking modes.
 | --- | --- | --- |
 | electric | Electric |  |
 
+## Electric Cable Pulley
+
+A pulley that changes attached cable lengths based on forces applied to cables.
+
+Draw a rope logic link between two rope nodes to form a cable. Cables will slide based on difference in force applied to each cable.
+
+### PROPERTIES
+
+- Mass: 25
+- Dimensions (WxDxH): 3x3x1
+- Cost: $250
+- Tags: basic
+- File: winch_pulley_cable.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Rope 1 Length | The current length of rope 1 in metres. |
+| number | Rope 2 Length | The current length of rope 2 in metres. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Rope 2 |  |
+| rope | Rope 1 |  |
+
+## Electric Cable Pulley (Corner)
+
+A pulley that changes attached cable lengths based on forces applied to cables.
+
+Draw a rope logic link between two rope nodes to form a cable. Cables will slide based on difference in force applied to each cable.
+
+### PROPERTIES
+
+- Mass: 25
+- Dimensions (WxDxH): 3x3x1
+- Cost: $250
+- Tags: basic
+- File: winch_pulley_cable_corner.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Rope 1 Length | The current length of rope 1 in metres. |
+| number | Rope 2 Length | The current length of rope 2 in metres. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Rope 2 |  |
+| rope | Rope 1 |  |
+
 ## Electrical Cable Anchor
 
 An anchor point for a basic data/electric cable.
@@ -1036,6 +1092,66 @@ Draw a rope logic link between two Fluid Hose Anchors to form a hose. Limited to
 | rope | Rope Node |  |
 | fluid | Fluid Node |  |
 
+## Fluid Hose Pulley
+
+A pulley that changes attached hose lengths based on forces applied to hoses.
+
+Draw a rope logic link between two rope nodes to form a hose. Hoses will slide based on difference in force applied to each hose.
+
+### PROPERTIES
+
+- Mass: 25
+- Dimensions (WxDxH): 3x3x1
+- Cost: $250
+- Tags: basic
+- File: winch_pulley_hose.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Rope 1 Length | The current length of rope 1 in metres. |
+| number | Rope 2 Length | The current length of rope 2 in metres. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Rope 2 |  |
+| rope | Rope 1 |  |
+| fluid | Fluid Node 1 |  |
+| fluid | Fluid Node 2 |  |
+
+## Fluid Hose Pulley (Corner)
+
+A pulley that changes attached hose lengths based on forces applied to hoses.
+
+Draw a rope logic link between two rope nodes to form a hose. Hoses will slide based on difference in force applied to each hose.
+
+### PROPERTIES
+
+- Mass: 25
+- Dimensions (WxDxH): 3x3x1
+- Cost: $250
+- Tags: basic
+- File: winch_pulley_hose_corner.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Rope 1 Length | The current length of rope 1 in metres. |
+| number | Rope 2 Length | The current length of rope 2 in metres. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Rope 2 |  |
+| rope | Rope 1 |  |
+| fluid | Fluid Node 1 |  |
+| fluid | Fluid Node 2 |  |
+
 ## Fluid Nozzle
 
 A fluid nozzle that fires pressurized water for putting out fires.
@@ -1839,62 +1955,6 @@ You can get in and out of the seat by interacting with it using [f]. You can pla
 | --- | --- | --- |
 | on/off | Occupied | Outputs an on signal if this seat is occupied by a character. |
 
-## Pulley
-
-A pulley that changes attached rope lengths based on forces applied to ropes.
-
-Draw a rope logic link between two rope nodes to form a cable. Ropes will slide based on difference in force applied to each rope.
-
-### PROPERTIES
-
-- Mass: 25
-- Dimensions (WxDxH): 3x3x1
-- Cost: $250
-- Tags: basic
-- File: winch_pulley.xml
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | Rope 1 Length | The current length of rope 1 in metres. |
-| number | Rope 2 Length | The current length of rope 2 in metres. |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| rope | Rope 2 |  |
-| rope | Rope 1 |  |
-
-## Pulley (Corner)
-
-A pulley that changes attached rope lengths based on forces applied to ropes.
-
-Draw a rope logic link between two rope nodes to form a cable. Ropes will slide based on difference in force applied to each rope.
-
-### PROPERTIES
-
-- Mass: 25
-- Dimensions (WxDxH): 3x3x1
-- Cost: $250
-- Tags: basic
-- File: winch_pulley_corner.xml
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| number | Rope 1 Length | The current length of rope 1 in metres. |
-| number | Rope 2 Length | The current length of rope 2 in metres. |
-
-### connections
-
-| Type | Label | Description |
-| --- | --- | --- |
-| rope | Rope 2 |  |
-| rope | Rope 1 |  |
-
 ## RCS Thruster
 
 A fluid jet that fires pressurized air for altitude control and translation.
@@ -1947,6 +2007,62 @@ Draw a rope logic link between two Rope Anchors to form a rope.
 | Type | Label | Description |
 | --- | --- | --- |
 | rope | Rope Node |  |
+
+## Rope Pulley
+
+A pulley that changes attached rope lengths based on forces applied to ropes.
+
+Draw a rope logic link between two rope nodes to form a rope. Ropes will slide based on difference in force applied to each rope.
+
+### PROPERTIES
+
+- Mass: 25
+- Dimensions (WxDxH): 3x3x1
+- Cost: $250
+- Tags: basic
+- File: winch_pulley.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Rope 1 Length | The current length of rope 1 in metres. |
+| number | Rope 2 Length | The current length of rope 2 in metres. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Rope 2 |  |
+| rope | Rope 1 |  |
+
+## Rope Pulley (Corner)
+
+A pulley that changes attached rope lengths based on forces applied to ropes.
+
+Draw a rope logic link between two rope nodes to form a rope. Ropes will slide based on difference in force applied to each rope.
+
+### PROPERTIES
+
+- Mass: 25
+- Dimensions (WxDxH): 3x3x1
+- Cost: $250
+- Tags: basic
+- File: winch_pulley_corner.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Rope 1 Length | The current length of rope 1 in metres. |
+| number | Rope 2 Length | The current length of rope 2 in metres. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Rope 2 |  |
+| rope | Rope 1 |  |
 
 ## Search Light
 
