@@ -2064,6 +2064,30 @@ Draw a rope logic link between two rope nodes to form a rope. Ropes will slide b
 | rope | Rope 2 |  |
 | rope | Rope 1 |  |
 
+## Rotating Light
+
+A rotating light that can be controlled using an on/off signal.
+
+### PROPERTIES
+
+- Mass: 1
+- Dimensions (WxDxH): 1x1x1
+- Cost: $50
+- Tags: beacon,warning
+- File: rotating_light.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Light Switch | Controls whether or not the light is switched on. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Electric | Electrical power connection. |
+
 ## Search Light
 
 A spotlight that can be rotated up and down.
