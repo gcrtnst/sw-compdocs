@@ -701,3 +701,35 @@ A small speaker capable of playing audio data to nearby players. (Range : 15)
 | Type | Label | Description |
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
+
+## Viewing Scope
+
+A viewing scope.
+
+Interact to display video data at full detail.
+
+### PROPERTIES
+
+- Mass: 5
+- Dimensions (WxDxH): 1x1x1
+- Cost: $2000
+- Tags: 
+- File: viewing_scope.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| video | Video Signal |  |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Occupied | Outputs an on signal if this viewing scope is occupied by a character. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Electric |  |

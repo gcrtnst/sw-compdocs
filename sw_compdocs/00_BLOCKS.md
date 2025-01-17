@@ -32,7 +32,7 @@ Interacting with [q] or [e] again will detach that hand. The handle can be used 
 
 | Type | Label | Description |
 | --- | --- | --- |
-| on/off | Is Occupied | Returns true if a player is attached to the handle. |
+| on/off | Occupied | Outputs an on signal if a player is attached to the handle. |
 
 ## Inverse Pyramid
 
@@ -48,7 +48,7 @@ Components can be attached to all faces, with the exception of the triangular fa
 - Tags: basic
 - File: 04_invpyramid.xml
 
-## Inverse pyramid 1x2
+## Inverse Pyramid 1x2
 
 1x2 inverse pyramid-shaped building block.
 
