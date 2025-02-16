@@ -174,7 +174,7 @@ Has an infrared mode, variable field of view, stabilized and tracking modes.
 | --- | --- | --- |
 | video | Camera Feed |  |
 | number | Laser Distance | The measured distance in meters. |
-| composite | Composite Output | x, y, z output for the laser target in channels 1, 2, 3 respectively. |
+| composite | Composite Output | Composite value channels: 1: x position of laser target, 2: y position of laser target, 3: z position of laser target, 4: pitch of component in turns, 5: yaw of component in turns |
 
 ### connections
 

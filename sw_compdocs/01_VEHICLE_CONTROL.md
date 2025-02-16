@@ -19,6 +19,7 @@ It provides 4 number outputs that produce a standard value ranging from -1 to 1,
 | Type | Label | Description |
 | --- | --- | --- |
 | audio | Headset Audio |  |
+| video | Headset Video | Displays video UI overlay on a helmet mounted display. |
 
 ### logic outputs
 
@@ -138,6 +139,7 @@ You can get in and out of the position by interacting with it using [f].
 | Type | Label | Description |
 | --- | --- | --- |
 | audio | Headset Audio |  |
+| video | Headset Video | Displays video UI overlay on a helmet mounted display. |
 
 ### logic outputs
 
@@ -257,6 +259,7 @@ It provides 4 number outputs that produce a standard value ranging from -1 to 1,
 | Type | Label | Description |
 | --- | --- | --- |
 | audio | Headset Audio |  |
+| video | Headset Video | Displays video UI overlay on a helmet mounted display. |
 
 ### logic outputs
 
@@ -377,6 +380,7 @@ You can get in and out of the position by interacting with it using [f]. You can
 | Type | Label | Description |
 | --- | --- | --- |
 | audio | Headset Audio |  |
+| video | Headset Video | Displays video UI overlay on a helmet mounted display. |
 
 ### logic outputs
 
@@ -495,6 +499,7 @@ It provides 4 number outputs that produce a standard value ranging from -1 to 1,
 | Type | Label | Description |
 | --- | --- | --- |
 | audio | Headset Audio |  |
+| video | Headset Video | Displays video UI overlay on a helmet mounted display. |
 
 ### logic outputs
 
@@ -536,6 +541,7 @@ It provides 10 number outputs that produce a standard value ranging from -1 to 1
 | Type | Label | Description |
 | --- | --- | --- |
 | audio | Headset Audio |  |
+| video | Headset Video | Displays video UI overlay on a helmet mounted display. |
 
 ### logic outputs
 
@@ -1006,6 +1012,7 @@ It provides 4 number outputs that produce a standard value ranging from -1 to 1,
 | Type | Label | Description |
 | --- | --- | --- |
 | audio | Headset Audio |  |
+| video | Headset Video | Displays video UI overlay on a helmet mounted display. |
 
 ### logic outputs
 
