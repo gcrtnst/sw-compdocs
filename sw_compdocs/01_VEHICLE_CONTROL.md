@@ -403,6 +403,48 @@ You can get in and out of the position by interacting with it using [f]. You can
 | composite | Seat data | Outputs the axis, hotkey and occupied data from the helm. (On/Off 1+ : Hotkeys) (On/Off 31 : Trigger) (On/Off 32 : Occupied) (Value 1 : [a]/[d]) (Value 2 : [w]/[s]) (Value 3 : [left]/[right]) (Value 4 : [up]/[down]) (Value 9 : Look X)  (Value 10 : Look Y) |
 | audio | Headset Audio |  |
 
+## Keel (Large)
+
+A large boat keel used for sailing.
+
+The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.
+
+### PROPERTIES
+
+- Mass: 2000
+- Dimensions (WxDxH): 3x25x9
+- Cost: $2000
+- Tags: boat,basic
+- File: keel_large.xml
+
+## Keel (Medium)
+
+A medium boat keel used for sailing.
+
+The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.
+
+### PROPERTIES
+
+- Mass: 1000
+- Dimensions (WxDxH): 3x15x7
+- Cost: $1000
+- Tags: boat,basic
+- File: keel_medium.xml
+
+## Keel (Small)
+
+A small boat keel used for sailing.
+
+The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.
+
+### PROPERTIES
+
+- Mass: 500
+- Dimensions (WxDxH): 1x9x5
+- Cost: $300
+- Tags: boat,basic
+- File: keel_small.xml
+
 ## Keep Active Block
 
 A keep alive marking block.

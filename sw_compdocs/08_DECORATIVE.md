@@ -1,5 +1,47 @@
 # Decorative
 
+## Flag (Large)
+
+A large sized flagpole.
+
+The flag design can be set in the properties menu.
+
+### PROPERTIES
+
+- Mass: 3
+- Dimensions (WxDxH): 1x1x7
+- Cost: $100
+- Tags: 
+- File: flag_large.xml
+
+## Flag (Medium)
+
+A medium sized flagpole.
+
+The flag design can be set in the properties menu.
+
+### PROPERTIES
+
+- Mass: 2
+- Dimensions (WxDxH): 1x1x5
+- Cost: $75
+- Tags: 
+- File: flag_medium.xml
+
+## Flag (Small)
+
+A small sized flagpole.
+
+The flag design can be set in the properties menu.
+
+### PROPERTIES
+
+- Mass: 1
+- Dimensions (WxDxH): 1x1x3
+- Cost: $25
+- Tags: 
+- File: flag_small.xml
+
 ## Large Tyre
 
 A large decorative tyre.

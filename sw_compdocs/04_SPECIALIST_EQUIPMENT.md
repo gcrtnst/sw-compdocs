@@ -2088,6 +2088,32 @@ A rotating light that can be controlled using an on/off signal.
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
 
+## Sail Anchor
+
+An anchor point for a sail.
+
+Draw a rope logic link between four Sail Anchors in a loop to form a sail. A sail will convert force from the wind to the direction of the sail facing. The sail force is strongest when fully facing the wind to act as a parachute, but also has a strong force when facing slightly off a right-angle from the wind to act as a wing. A keel is recommended for sailboats to apply sail forces in a useful direction.
+
+### PROPERTIES
+
+- Mass: 3
+- Dimensions (WxDxH): 1x1x2
+- Cost: $50
+- Tags: basic
+- File: rope_hook_sail.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Take In/Out Sails | While active, allows the ropes forming the sail to spool freely. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Sail Node |  |
+
 ## Search Light
 
 A spotlight that can be rotated up and down.
