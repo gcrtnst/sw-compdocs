@@ -1772,6 +1772,27 @@ Interacting with [q]/[e] will equip/store the selected outfit. Only specialist o
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
 
+## Outfit Inventory (Firefighter SCBA)
+
+An outfit inventory unit containing specialist firefighting gear.
+
+When equipped, it will absorb 95% of damage dealt by fires, and provides breathable air for the user. The air tank can be refilled by storing the gear in an outfit inventory unit.
+
+### PROPERTIES
+
+- Mass: 9
+- Dimensions (WxDxH): 3x1x3
+- Cost: $1000
+- Tags: basic
+- File: inventory_outfit_firefighter_scba.xml
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Electric | Electrical power connection. |
+| fluid | Fluid In |  |
+
 ## Outfit Inventory (Firefighter)
 
 An outfit inventory unit containing specialist firefighting gear.

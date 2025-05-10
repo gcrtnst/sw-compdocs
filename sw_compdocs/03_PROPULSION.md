@@ -1096,6 +1096,7 @@ Attaches to rail lines.
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1128,6 +1129,7 @@ Attaches to rail lines.
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1154,6 +1156,7 @@ Attaches to rail lines.
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1180,6 +1183,7 @@ Attaches to rail lines.
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1206,6 +1210,7 @@ Attaches to rail lines.
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1232,6 +1237,7 @@ Attaches to rail lines.
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1264,6 +1270,7 @@ Attaches to rail lines.
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1296,6 +1303,7 @@ Attaches to rail lines. Connect to a train wheel drive piston or another steam t
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1322,6 +1330,7 @@ Attaches to rail lines. Connect to a train wheel drive piston or another steam t
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1348,6 +1357,7 @@ Attaches to rail lines. Connect to a train wheel drive piston or another steam t
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1374,6 +1384,7 @@ Attaches to rail lines. Connect to a train wheel drive piston or another steam t
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1400,6 +1411,7 @@ Attaches to rail lines. Connect to a train wheel drive piston or another steam t
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1426,6 +1438,7 @@ Attaches to rail lines. Connect to a train wheel drive piston or another steam t
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1452,6 +1465,7 @@ Attaches to rail lines.
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1484,6 +1498,7 @@ Attaches to rail lines.
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1516,6 +1531,7 @@ Attaches to rail lines.
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 
@@ -1548,6 +1564,7 @@ Attaches to rail lines.
 | Type | Label | Description |
 | --- | --- | --- |
 | number | Brakes | Number input to set the level of braking applied to the wheels. |
+| on/off | Wheel Release | Input to release wheels. |
 
 ### logic outputs
 

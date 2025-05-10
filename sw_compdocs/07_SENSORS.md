@@ -344,7 +344,7 @@ This sensor is designed for missiles and acts along the Z axis, with an output n
 | Type | Label | Description |
 | --- | --- | --- |
 | on/off | Activate | Enable the Laser Sensor. |
-| number | Frequency | Target laser frequency to scan for. |
+| number | Wavelength | The specific light wavelength to detect (whole number). |
 
 ### logic outputs
 
