@@ -73,6 +73,30 @@ A Compact Linear Track Base must be attached somewhere along the track for it to
 - Tags: 
 - File: linear_compact_module.xml
 
+## Compact Pivot (Power)
+
+A small pivot that can rotate freely about its axis.
+
+### PROPERTIES
+
+- Mass: 2
+  - Parent Mass: 1
+  - Child Mass: 1
+- Dimensions (WxDxH): 1x1x2
+  - Parent Dimensions (WxDxH): 1x1x1
+  - Child Dimensions (WxDxH): 1x1x1
+- Cost: $40
+- Tags: 
+- Parent File: multibody_compact_pivot_torque_a.xml
+- Child File: multibody_compact_pivot_torque_b.xml
+
+### connections
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | power | RPS | Power connection for transfering mechanical energy. |
+| Child | power | RPS | Power connection for transfering mechanical energy. |
+
 ## Compact Robotic Pivot
 
 A small robotic pivot that will orientate towards the input value within its range of motion.
@@ -896,6 +920,32 @@ The pivot can rotate to 0.25 turns in both directions.
 - Parent File: multibody_pivot_a.xml
 - Child File: multibody_pivot_b.xml
 
+## Pivot (Power)
+
+A basic pivot that can move freely.
+
+The pivot can rotate to 0.25 turns in both directions.
+
+### PROPERTIES
+
+- Mass: 2
+  - Parent Mass: 1
+  - Child Mass: 1
+- Dimensions (WxDxH): 1x1x3
+  - Parent Dimensions (WxDxH): 1x1x2
+  - Child Dimensions (WxDxH): 1x1x1
+- Cost: $20
+- Tags: hinge
+- Parent File: multibody_pivot_torque_a.xml
+- Child File: multibody_pivot_torque_b.xml
+
+### connections
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | power | RPS | Power connection for transfering mechanical energy. |
+| Child | power | RPS | Power connection for transfering mechanical energy. |
+
 ## Pneumatic Piston
 
 A pneumatic piston that can be expanded and contracted.
@@ -1542,6 +1592,42 @@ An external on/off signal can also be used to control whether or not the button 
 | Type | Label | Description |
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
+
+## Torque Connector
+
+A small torque connector that can be used to transfer mechanical energy between vehicles.
+
+Two torque connectors will attach when they are within close proximity. When connected, mechanical energy will be transferred between the connectors.
+
+### PROPERTIES
+
+- Mass: 2
+- Dimensions (WxDxH): 1x1x2
+- Cost: $20
+- Tags: magnet
+- File: connector_torque.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Release Connector | Release the connector when receiving an on signal. |
+| composite | Composite Data Send | Composite data to send to the connected connector. |
+| video | Video Data Send | Video data to send to the connected connector. |
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Connected | Outputs an on signal if the connector is attached to another connector. |
+| composite | Composite Data Receive | Composite data to receive from the connected connector. |
+| video | Video Data Receive | Video data to receive from the connected connector. |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| power | RPS | Power connection for transfering mechanical energy. |
 
 ## Turret Ring (Large)
 
