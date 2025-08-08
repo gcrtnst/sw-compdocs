@@ -87,7 +87,7 @@ Barrel extensions increase weapon accuracy, but also produce more recoil force.
 
 An artillery cannon ammo belt.
 
-Cannon ammo belts can store and transfer ammo shells. Connector belts allow ammo transfers between vehicles.Spawned ammo type can be set in component properties window.
+Cannon ammo belts can store and transfer ammo shells. Connector belts allow ammo transfers between vehicles. Spawned ammo type can be set in component properties window.
 
 ### PROPERTIES
 

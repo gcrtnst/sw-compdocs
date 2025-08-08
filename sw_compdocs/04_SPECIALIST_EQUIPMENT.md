@@ -499,7 +499,7 @@ Press [lmb] to throw a red smoke flare which burns for a long time.
 
 ## Equipment inventory (Flaregun Ammo)
 
-A small equipment storage unit containing a box flaregun ammo.
+A small equipment storage unit containing a box of flaregun ammo.
 
 Press [lmb] to reload an equipped flaregun.
 
@@ -741,7 +741,7 @@ Press [lmb] to toggle the locator on or off. When active, the locator produces a
 
 A small equipment storage unit containing a handheld radio.
 
-Hold [lmb] transmit voice audio. Press [r] to cycle between frequencies 0~8, or turn the radio off. When a frequncy is selected, the radio will transmit and receive voice audio on that frequency only. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. (Max Effective Range : 500m)
+Hold [lmb] transmit voice audio. Press [r] to cycle between frequencies 0~8, or turn the radio off. When a frequency is selected, the radio will transmit and receive voice audio on that frequency only. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. (Max Effective Range : 500m)
 
 ### PROPERTIES
 

@@ -500,6 +500,7 @@ This sensor outputs the distance and relative angle to a detected object within 
 | Type | Label | Description |
 | --- | --- | --- |
 | on/off | Activate | Enable the Radar. |
+| composite | Gimbal Input | Inputs rotation data for radar in manual mode. Value 1: The yaw angle of the radar measured in turns, Value 2: The pitch angle of the radar measured in turns from -0.125 to 0.125. |
 
 ### logic outputs
 
@@ -533,6 +534,7 @@ This sensor outputs the distance and relative angle to a detected object within 
 | Type | Label | Description |
 | --- | --- | --- |
 | on/off | Activate | Enable the Radar. |
+| composite | Gimbal Input | Inputs rotation data for radar in manual mode. Value 1: The yaw angle of the radar measured in turns, Value 2: The pitch angle of the radar measured in turns from -0.125 to 0.125. |
 
 ### logic outputs
 
@@ -566,6 +568,7 @@ This sensor outputs the distance and relative angle to a detected object within 
 | Type | Label | Description |
 | --- | --- | --- |
 | on/off | Activate | Enable the Radar. |
+| composite | Gimbal Input | Inputs rotation data for radar in manual mode. Value 1: The yaw angle of the radar measured in turns, Value 2: The pitch angle of the radar measured in turns from -0.125 to 0.125. |
 
 ### logic outputs
 
@@ -633,6 +636,7 @@ This sensor outputs the distance and relative angle to a detected object within 
 | Type | Label | Description |
 | --- | --- | --- |
 | on/off | Activate | Enable the Radar. |
+| composite | Gimbal Input | Inputs rotation data for radar in manual mode. Value 1: The yaw angle of the radar measured in turns, Value 2: The pitch angle of the radar measured in turns from -0.125 to 0.125. |
 
 ### logic outputs
 
