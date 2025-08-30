@@ -2129,48 +2129,6 @@ You can get in and out of the seat by interacting with it using [f]. You can pla
 | --- | --- | --- |
 | on/off | Occupied | Outputs an on signal if the seat is occupied by a character. |
 
-## Saddle Seat
-
-A small padded seat with control handlebars.
-
-You can get in and out of the seat by interacting with it using [f]. You can place a rescued survivor in any seat by using [f] while carrying them.
-
-### PROPERTIES
-
-- Mass: 5
-- Dimensions (WxDxH): 3x4x4
-- Cost: $75
-- Tags: basic,seat
-- File: seat_saddle.xml
-
-### logic inputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| audio | Headset Audio |  |
-| video | Headset Video | Displays video UI overlay on a helmet mounted display. |
-
-### logic outputs
-
-| Type | Label | Description |
-| --- | --- | --- |
-| on/off | Occupied | Outputs an on signal if the seat is occupied by a character. |
-| on/off | Trigger [space] | Outputs an on signal when [space] is held, and off when it is not. |
-| number | Look X | Outputs the character look direction in turns along the X-axis. |
-| number | Look Y | Outputs the character look direction in turns along the Y-axis. |
-| number | Axis 1 [a]/[d] | Outputs a standard value between -1 and 1, controlled using [a] and [d]. [a] causes the output value to move towards -1, and [d] moves it towards 1. |
-| number | Axis 2 [w]/[s] | Outputs a standard value between -1 and 1, controlled using [w] and [s]. [s] causes the output value to move towards -1, and [w] moves it towards 1. |
-| number | Axis 3 [left]/[right] | Outputs a standard value between -1 and 1, controlled using [left] and [right]. [left] causes the output value to move towards -1, and [right] moves it towards 1. |
-| number | Axis 4 [up]/[down] | Outputs a standard value between -1 and 1, controlled using [up] and [down]. [down] causes the output value to move towards -1, and [up] moves it towards 1. |
-| on/off | Hotkey 1 [1] | Outputs an on signal when [1] is held, and off when it is not. |
-| on/off | Hotkey 2 [2] | Outputs an on signal when [2] is held, and off when it is not. |
-| on/off | Hotkey 3 [3] | Outputs an on signal when [3] is held, and off when it is not. |
-| on/off | Hotkey 4 [4] | Outputs an on signal when [4] is held, and off when it is not. |
-| on/off | Hotkey 5 [5] | Outputs an on signal when [5] is held, and off when it is not. |
-| on/off | Hotkey 6 [6] | Outputs an on signal when [6] is held, and off when it is not. |
-| composite | Seat data | Outputs the axis, hotkey and occupied data from the seat. (On/Off 1+ : Hotkeys) (On/Off 31 : Trigger) (On/Off 32 : Occupied) (Value 1 : [a]/[d]) (Value 2 : [w]/[s]) (Value 3 : [left]/[right]) (Value 4 : [up]/[down]) (Value 9 : Look X)  (Value 10 : Look Y) |
-| audio | Headset Audio |  |
-
 ## Sail Anchor
 
 An anchor point for a sail.

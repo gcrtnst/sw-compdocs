@@ -351,7 +351,7 @@ This sensor is designed for missiles and acts along the Z axis, with an output n
 | Type | Label | Description |
 | --- | --- | --- |
 | composite | Sensor Data | Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc... |
-| composite | Missile Output | Outputs x and y data for the most immediate target. Link this directly into a rocket fins component. |
+| composite | Missile Output | Outputs yaw and pitch rotations toward the most immediate target. (Value 1 : Yaw) (Value 2 : Pitch). Link this directly into a rocket fins component. |
 
 ### connections
 
@@ -608,7 +608,7 @@ This sensor outputs the distance and relative angle to a detected object within 
 | Type | Label | Description |
 | --- | --- | --- |
 | composite | Radar Data | Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc... |
-| composite | Missile Output | Outputs x and y data for the most immediate target. Link this directly into a rocket fins component. |
+| composite | Missile Output | Outputs yaw and pitch rotations toward the most immediate target. (Value 1 : Yaw) (Value 2 : Pitch). Link this directly into a rocket fins component. |
 | number | Radar Rotation | Current radar rotation from forward in turns. |
 
 ### connections

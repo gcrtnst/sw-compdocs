@@ -902,7 +902,7 @@ Fuel can be stacked to increase the burn duration of a rocket booster. Link up t
 
 | Type | Label | Description |
 | --- | --- | --- |
-| composite | Composite Input | Composite data for the control surfaces. |
+| composite | Composite Input | Composite data for the flight control surfaces. (Value 1 : Yaw) (Value 2 : Pitch). |
 
 ### connections
 
@@ -942,7 +942,7 @@ Fuel can be stacked to increase the burn duration of a rocket booster. Link up t
 
 | Type | Label | Description |
 | --- | --- | --- |
-| composite | Composite Input | Composite data for the control surfaces. |
+| composite | Composite Input | Composite data for the flight control surfaces. (Value 1 : Yaw) (Value 2 : Pitch). |
 
 ### connections
 
@@ -982,7 +982,7 @@ Fuel can be stacked to increase the burn duration of a rocket booster. Link up t
 
 | Type | Label | Description |
 | --- | --- | --- |
-| composite | Composite Input | Composite data for the control surfaces. |
+| composite | Composite Input | Composite data for the flight control surfaces. (Value 1 : Yaw) (Value 2 : Pitch). |
 
 ### connections
 
@@ -1022,7 +1022,7 @@ Fuel can be stacked to increase the burn duration of a rocket booster. Link up t
 
 | Type | Label | Description |
 | --- | --- | --- |
-| composite | Composite Input | Composite data for the control surfaces. |
+| composite | Composite Input | Composite data for the flight control surfaces. (Value 1 : Yaw) (Value 2 : Pitch). |
 
 ### connections
 
