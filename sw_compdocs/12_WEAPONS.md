@@ -196,6 +196,26 @@ Cannon ammo belts can store and transfer ammo shells. Feeder belts transfer ammo
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
 
+## Artillery Cannon Belt (Flexible)
+
+An artillery cannon ammo belt.
+
+Flexible belts can be connected together by rope nodes to transfer ammo. Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.
+
+### PROPERTIES
+
+- Mass: 4
+- Dimensions (WxDxH): 1x4x2
+- Cost: $100
+- Tags: weapon,cannon,belt,artillery
+- File: gun_belt_flex_xl.xml
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Ammo |  |
+
 ## Artillery Cannon Belt (Junction)
 
 An artillery cannon ammo belt.
@@ -436,6 +456,26 @@ Autocannon belts can transfer all calibers of autocannon ammo. Feeder belts tran
 | Type | Label | Description |
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
+
+## Autocannon Belt (Flexible)
+
+An autocannon ammo belt.
+
+Flexible belts can be connected together by rope nodes to transfer ammo. Autocannon belts can transfer all calibers of autocannon ammo.
+
+### PROPERTIES
+
+- Mass: 3
+- Dimensions (WxDxH): 1x3x2
+- Cost: $100
+- Tags: weapon,autocannon,belt
+- File: gun_belt_flex.xml
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Ammo |  |
 
 ## Autocannon Belt (Junction)
 
@@ -679,6 +719,26 @@ Cannon ammo belts can store and transfer ammo shells. Feeder belts transfer ammo
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
 
+## Battle Cannon Belt (Flexible)
+
+A battle cannon ammo belt.
+
+Flexible belts can be connected together by rope nodes to transfer ammo. Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.
+
+### PROPERTIES
+
+- Mass: 3
+- Dimensions (WxDxH): 1x3x2
+- Cost: $100
+- Tags: weapon,cannon,belt,battle
+- File: gun_belt_flex_l.xml
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Ammo |  |
+
 ## Battle Cannon Belt (Junction)
 
 A battle cannon ammo belt.
@@ -920,6 +980,26 @@ Cannon ammo belts can store and transfer ammo shells. Feedeer belts transfer amm
 | Type | Label | Description |
 | --- | --- | --- |
 | electric | Electric | Electrical power connection. |
+
+## Bertha Cannon Belt (Flexible)
+
+A bertha cannon ammo belt.
+
+Flexible belts can be connected together by rope nodes to transfer ammo. Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.
+
+### PROPERTIES
+
+- Mass: 63
+- Dimensions (WxDxH): 3x7x4
+- Cost: $100
+- Tags: weapon,cannon,belt,bertha
+- File: gun_belt_flex_xxl.xml
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Ammo |  |
 
 ## Bertha Cannon Belt (Junction)
 
