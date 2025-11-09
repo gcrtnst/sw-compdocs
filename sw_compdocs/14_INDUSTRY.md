@@ -166,6 +166,26 @@ Produces large amounts of heat. Can be supplied with a duct. Consumes 1 coal to 
 | fluid | Air | Port for supplying air to the fire. |
 | fluid | Exhaust | Port for removing exhaust from burnt coal. |
 
+## Flexible Duct
+
+A flexible resource duct.
+
+Transports resources through the connected system. Flexible ducts can be connected together by rope nodes to transfer resources.
+
+### PROPERTIES
+
+- Mass: 20
+- Dimensions (WxDxH): 3x3x2
+- Cost: $50
+- Tags: steam,coal,fishing
+- File: steam_coal_flex.xml
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| rope | Duct |  |
+
 ## Funnel Duct
 
 A funnel for moving resources.
