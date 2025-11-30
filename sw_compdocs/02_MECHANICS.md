@@ -1777,6 +1777,84 @@ Inputting a value of 0 will cause it to stop. The pivot's current rotation can b
 | --- | --- | --- | --- |
 | Parent | electric | Electric | Electrical power connection. |
 
+## Velocity Pivot (Fluid)
+
+A pivot that will continuously rotate at a set input speed.
+
+Inputting a value of 0 will cause it to stop. The pivot's current rotation can be read from its output. An output of 1 corresponds to one full turn, and -1 to a full turn in the opposite direction.
+
+### PROPERTIES
+
+- Mass: 10
+  - Parent Mass: 9
+  - Child Mass: 1
+- Dimensions (WxDxH): 3x3x2
+  - Parent Dimensions (WxDxH): 3x3x1
+  - Child Dimensions (WxDxH): 1x1x1
+- Cost: $200
+- Tags: 
+- Parent File: multibody_velocity_pivot_01_a_fluid.xml
+- Child File: multibody_velocity_pivot_01_b_fluid.xml
+
+### logic inputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | number | Rotational Speed | The speed at which the pivot should rotate. |
+
+### logic outputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | number | Current Rotation | The pivot's measured rotation expressed in fractions of full turns. |
+
+### connections
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | electric | Electric | Electrical power connection. |
+| Parent | fluid | Fluid | Fluid connection for transfering fluids. |
+| Child | fluid | Fluid | Fluid connection for transfering fluids. |
+
+## Velocity Pivot (Power)
+
+A pivot that will continuously rotate at a set input speed.
+
+Inputting a value of 0 will cause it to stop. The pivot's current rotation can be read from its output. An output of 1 corresponds to one full turn, and -1 to a full turn in the opposite direction.
+
+### PROPERTIES
+
+- Mass: 10
+  - Parent Mass: 9
+  - Child Mass: 1
+- Dimensions (WxDxH): 3x3x2
+  - Parent Dimensions (WxDxH): 3x3x1
+  - Child Dimensions (WxDxH): 1x1x1
+- Cost: $200
+- Tags: 
+- Parent File: multibody_velocity_pivot_01_a_torque.xml
+- Child File: multibody_velocity_pivot_01_b_torque.xml
+
+### logic inputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | number | Rotational Speed | The speed at which the pivot should rotate. |
+
+### logic outputs
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | number | Current Rotation | The pivot's measured rotation expressed in fractions of full turns. |
+
+### connections
+
+| Body | Type | Label | Description |
+| --- | --- | --- | --- |
+| Parent | electric | Electric | Electrical power connection. |
+| Parent | power | RPS | Power connection for transfering mechanical energy. |
+| Child | power | RPS | Power connection for transfering mechanical energy. |
+
 ## Gearbox (Deprecated)
 
 > [!WARNING]

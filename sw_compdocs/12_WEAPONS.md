@@ -1325,6 +1325,26 @@ Stores machine gun ammo, but can only be reloaded by hand. Machine guns are rest
 | --- | --- | --- |
 | number | Ammo count | Outputs the total ammo count stored in the box. |
 
+## Machine Gun Ammo Box (Large)
+
+A machine gun ammo box with greater capacity.
+
+Stores machine gun ammo, but can only be reloaded by hand. Machine guns are restricted to Kinetic, Armor-Piercing, and Incendiary ammo only.
+
+### PROPERTIES
+
+- Mass: 20
+- Dimensions (WxDxH): 1x2x2
+- Cost: $30
+- Tags: weapon,machinegun,belt
+- File: gun_drum_xsmall_2.xml
+
+### logic outputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| number | Ammo count | Outputs the total ammo count stored in the box. |
+
 ## Rocket Launcher
 
 A 4-shot rocket launcher.
