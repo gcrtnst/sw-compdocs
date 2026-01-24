@@ -1237,7 +1237,7 @@ The wheel will form a track with other wheels of the same size and orientation t
 
 ### PROPERTIES
 
-- Mass: 35
+- Mass: 25
 - Dimensions (WxDxH): 3x3x3
 - Cost: $250
 - Tags: steerable,steering
@@ -1343,7 +1343,7 @@ A drive wheel is required to rotate the connected track. The wheel will form a t
 
 ### PROPERTIES
 
-- Mass: 20
+- Mass: 25
 - Dimensions (WxDxH): 3x3x3
 - Cost: $100
 - Tags: steerable,steering
