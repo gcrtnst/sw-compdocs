@@ -239,6 +239,9 @@ Large Rotor (Deprecated),large_rotor.xml,Propulsion,"rotor,helicopter,basic",FAL
 Turbine Engine (Deprecated),turbine.xml,Propulsion,basic,FALSE,TRUE,FALSE,150,45,3,7,3,Turbine engine that can be connected to powered components.,An on/off signal controls engine startup. The throttle input takes a standard value between -1 and 1 and controls the forward and backward force of connected components. The engine's maximum power output is split between connected components.
 Barometer,barometer.xml,Specialist Equipment,,FALSE,FALSE,FALSE,20,1,1,1,2,Measures the current air pressure.,Returns the pressure in atmospheres of the compartment or current altitude.
 Bed,seat_bed.xml,Specialist Equipment,basic,FALSE,FALSE,FALSE,250,20,3,7,4,A bed.,You can get in and out of the bed by interacting with it using [f]. You can place a rescued survivor in any bed by using [f] while carrying them.
+Buoyancy Float Block,buoyancy_float_block.xml,Specialist Equipment,basic,FALSE,FALSE,FALSE,50,1,4,4,4,A block-shaped buoyant float.,
+Buoyancy Float Pyramid,buoyancy_float_pyramid.xml,Specialist Equipment,basic,FALSE,FALSE,FALSE,50,1,4,4,4,A pyramid-shaped buoyant float.,
+Buoyancy Float Wedge,buoyancy_float_wedge.xml,Specialist Equipment,basic,FALSE,FALSE,FALSE,50,1,4,4,4,A wedge-shaped buoyant float.,
 Camera Gimbal,camera_gimbal.xml,Specialist Equipment,,FALSE,FALSE,FALSE,5000,50,3,3,3,A gimbal camera with video output feed.,"Has an infrared mode as well as pivot controls, a variable field of view."
 Camera Medium,camera_med.xml,Specialist Equipment,,FALSE,FALSE,FALSE,3000,10,1,1,2,A camera with video output feed.,Has infrared mode as well as variable field of view. Can be pivoted up to 0.125 turns using composite input.
 Camera Small,camera_small.xml,Specialist Equipment,,FALSE,FALSE,FALSE,1000,5,1,1,1,A camera with video output feed.,Can be pivoted up to 0.125 turns using composite input.

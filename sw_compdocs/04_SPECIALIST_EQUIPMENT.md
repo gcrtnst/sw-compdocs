@@ -40,6 +40,42 @@ You can get in and out of the bed by interacting with it using [f]. You can plac
 | --- | --- | --- |
 | on/off | Occupied | Outputs an on signal if this bed is occupied by a character. |
 
+## Buoyancy Float Block
+
+A block-shaped buoyant float.
+
+### PROPERTIES
+
+- Mass: 1
+- Dimensions (WxDxH): 4x4x4
+- Cost: $50
+- Tags: basic
+- File: buoyancy_float_block.xml
+
+## Buoyancy Float Pyramid
+
+A pyramid-shaped buoyant float.
+
+### PROPERTIES
+
+- Mass: 1
+- Dimensions (WxDxH): 4x4x4
+- Cost: $50
+- Tags: basic
+- File: buoyancy_float_pyramid.xml
+
+## Buoyancy Float Wedge
+
+A wedge-shaped buoyant float.
+
+### PROPERTIES
+
+- Mass: 1
+- Dimensions (WxDxH): 4x4x4
+- Cost: $50
+- Tags: basic
+- File: buoyancy_float_wedge.xml
+
 ## Camera Gimbal
 
 A gimbal camera with video output feed.
