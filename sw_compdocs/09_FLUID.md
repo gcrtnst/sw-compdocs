@@ -1128,6 +1128,29 @@ Submerge the electrodes into a volume of water and provide electric to separate 
 | fluid | Hydrogen Out |  |
 | electric | Electric |  |
 
+## Hydrogen Fuel Cell
+
+A hydrogen fuel cell capable of generating electric power.
+
+Pumping hydrogen and oxygen into the fuel cell generates power while creating water as a byproduct.
+
+### PROPERTIES
+
+- Mass: 50
+- Dimensions (WxDxH): 3x3x5
+- Cost: $800
+- Tags: 
+- File: hydrogen_fuel_cell.xml
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Electric | The electric connection to output electric energy. |
+| fluid | Oxygen In |  |
+| fluid | Hydrogen In |  |
+| fluid | Water Out |  |
+
 ## Impeller Pump
 
 An Impeller Pump that can push fluid through a system.

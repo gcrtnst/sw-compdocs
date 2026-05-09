@@ -850,6 +850,33 @@ Can be toggled to move resources through the vacuum. The vacuum can transport re
 | --- | --- | --- |
 | electric | Electric | Electrical input. |
 
+## Water Extractor
+
+A machine to process minerals into water.
+
+Extracts water from hydrous ores when supplied with electric power.
+
+### PROPERTIES
+
+- Mass: 20
+- Dimensions (WxDxH): 3x3x3
+- Cost: $100
+- Tags: industry,space
+- File: water_extractor.xml
+
+### logic inputs
+
+| Type | Label | Description |
+| --- | --- | --- |
+| on/off | Process |  |
+
+### connections
+
+| Type | Label | Description |
+| --- | --- | --- |
+| electric | Power |  |
+| fluid | Water Out |  |
+
 ## Mineral Converter (Deprecated)
 
 > [!WARNING]
