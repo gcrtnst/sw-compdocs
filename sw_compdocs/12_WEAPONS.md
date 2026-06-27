@@ -20,6 +20,7 @@ Artillery cannons fire high caliber explosive and armor-piercing shells over gre
 | --- | --- | --- |
 | on/off | Trigger | When true: fires a loaded shell. |
 | on/off | Open Breech | When true: opens the breech to allow shells to be loaded. |
+| number | Fuse Timer | Sets the optional time-delay fuse in seconds for high-explosive and fragmentation ammo types. |
 
 ### logic outputs
 
@@ -543,6 +544,7 @@ Battle cannons provide powerful, consistent firepower in a compact form.
 | --- | --- | --- |
 | on/off | Trigger | When true: fires a loaded shell. |
 | on/off | Open Breech | When true: opens the breech to allow shells to be loaded. |
+| number | Fuse Timer | Sets the optional time-delay fuse in seconds for high-explosive and fragmentation ammo types. |
 
 ### logic outputs
 
@@ -847,6 +849,7 @@ The Bertha cannon fires devastating high explosive mortar shells, with a wide ra
 | --- | --- | --- |
 | on/off | Trigger | When true: fires a loaded shell. |
 | on/off | Open Breech | When true: opens the breech to allow shells to be loaded. |
+| number | Fuse Timer | Sets the optional time-delay fuse in seconds for high-explosive and fragmentation ammo types. |
 
 ### logic outputs
 
@@ -1066,6 +1069,7 @@ Heavy autocannons bridge the gap between fast-firing autocannons and high-calibe
 | Type | Label | Description |
 | --- | --- | --- |
 | on/off | Trigger | When true: feeds, loads, and fires cartridges from a connected belt or drum. |
+| number | Fuse Timer | Sets the optional time-delay fuse in seconds for high-explosive and fragmentation ammo types. |
 
 ### logic outputs
 
